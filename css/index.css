@@ -1,6 +1,6 @@
 *{
-	color: black;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 }
 html, body{
 	height: 100%;
@@ -17,10 +17,24 @@ body{
 
 	position: relative;
 }
+.container{
+	min-width: 100% !important;
+}
+.row{
+	margin-right: 0 !important;
+}
 /* NAVBAR */
 nav{
 	height: 150px !important;
-	background-color: black !important; 
+	background-color: white !important; 
+	color:black;
+	position: fixed !important;
+}
+nav ul a{
+	color:black !important;
+}
+p{
+	width: 100%;
 }
 #logo{
 	left: 0;
@@ -30,22 +44,16 @@ nav{
 	height: 50px;
 }
 .container-nav{
-	margin-left:10px !important;
-	margin-right:0px !important;
 	width: 100% !important;
 }
 .row-info{
 	background-color:#383434;
-	width:126.6% !important; 
-}
-.row-menu{
-	width:126.6% !important; 
-
 }
 /* NAVBAR END */
 /* Carousel */
 .carousel{
 	min-height: 600px !important;
+	max-height: 900px !important;
 }
 /* END Carousel */
 /* COMMERCIAL AND RESIDENCIAL */
@@ -55,19 +63,299 @@ nav{
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 500px;
-	top: -40%;
+	width: 1000px;
+	min-height: 500px;
+	top: -15%;
 }
 
 .content-residencial-commercial{
 	background-color: white;
 	position: relative;
-	min-height: 200px;
+	min-height: 450px;
 	width:100%;
 	display: block;
 }
-
+#res-image{
+	background: url("../images/residential.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width:500px !important;
+	min-height: 400px;
+	background-size: 500px 400px;
+}
+#com-image{
+	background: url("../images/commercial.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width:500px !important;
+	min-height: 400px;
+	background-size: 500px 400px;
+}
+.residential{
+	color:white;
+}
+.commercial{
+	color:white;
+}
 /* END COMMERCIAL AND RESIDENCIAL */
+/* SERVICES */
+.services-text{
+	color:white;
+	background-color: darkblue;
+	min-height:300px !important;
+	margin-bottom: 0 !important;
+}
+.divider-services{
+	left:-15%;
+	position: relative;
+}
+.burglar{
+	color:white;
+	background: url("../images/burglar-system.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.network{
+	color:white;
+	background: url("../images/network.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.interactive{
+	color:white;
+	background: url("../images/interactive.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.counter{
+	color:white;
+	background: url("../images/counter.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 600px;
+	background-position: center; 
+}
+.audio{
+	color:white;
+	background: url("../images/audio.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.access{
+	color:white;
+	background: url("../images/access.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.fire{
+	color:white;
+	background: url("../images/fire.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.aerial{
+	color:white;
+	background: url("../images/aerial.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 600px;
+	background-position: center; 
+}
+.temperature{
+	color:white;
+	background: url("../images/temperature.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.intercom{
+	color:white;
+	background: url("../images/intercom.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+.enterphone{
+	color:white;
+	background: url("../images/enterphone.jpg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 300px;
+}
+/* END SERVICES */
+/* PARTNERS */
+.divider-partners{
+	background: black !important;
+}
+.partners{
+	color:black;
+	background: url("../images/partners.jpg");
+	background-repeat: no-repeat;
+	min-height:384px !important;
+	max-height:384px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 384px;
+}
+.logos{
+	width: 8%;
+	position: absolute;
+}
+#flir{
+	left:15%;
+}
+#cdvi{
+	left:25%;
+}
+#honey{
+	left: 35%;
+}
+#inter{
+	left: 45%;
+}
+#dsc{
+	/*bottom:55%;*/
+	left:45%;
+}
+#kantech{
+	/*bottom: 55%;*/
+	left:65%;
+}
+/* END PARTNERS */
+/* ABOUT */ 
+.about-text{
+	color:white;
+	background: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	min-height:500px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 500px;
+}
+.divider-about{
+	background: white !important;
+}
+/* END ABOUT */ 
+/* NEWS */
+.divider-news{
+	background: black !important;
+}
+.news{
+	color:black;
+	background: url("../images/news.jpg");
+	background-repeat: no-repeat;
+	min-height:300px !important;
+	max-height:384px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 600px;
+}
+.logos{
+	width: 8%;
+	position: absolute;
+}
+#bses{
+	left:25%;
+}
+#tyco{
+	left:45%;
+}
+#ssn{
+	left: 65%;
+}
+/* END NEWS */
+/* SUPPORT */ 
+.support-text{
+	color:black;
+	background-color: white;
+	min-height:500px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 500px;
+}
+.divider-support{
+	background: black !important;
+}
+/* END SUPPORT */ 
+/* AIRPLANE */ 
+.airplane{
+	background: url("../images/airplane.jpeg");
+	background-repeat: no-repeat;
+	min-height:500px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 1146px;
+	background-position: center;
+}
+/* END AIRPLANE */ 
+/* ASSOCIATIONS */
+.divider-associations{
+	background: black !important;
+}
+.associations{
+	color:black;
+	background: url("../images/associations.jpg");
+	background-repeat: no-repeat;
+	min-height:300px !important;
+	max-height:384px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 600px;
+}
+.logos{
+	width: 8%;
+	position: absolute;
+}
+#bses{
+	left:25%;
+}
+#tyco{
+	left:45%;
+}
+#ssn{
+	left: 65%;
+}
+/* END ASSOCIATIONS */
+/* CONTACT */ 
+.contact-text{
+	color:white;
+	background: url("../images/contact.jpg");
+	background-repeat: no-repeat;
+	min-height:500px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 500px;
+}
+.divider-contact{
+	background: white !important;
+}
+.box{
+  border: #solid 10px #000;
+  background-color: rgba(29, 117, 132, 0.74);
+  width:80%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+/* END CONTACT */ 
+/* END */ 
+.end-text{
+	color:white;
+	background-color: #232121;
+	min-height:500px !important;
+	margin-bottom: 0 !important;
+	background-size: 100% 500px;
+}
+.divider-end{
+	background: white !important;
+}
+#white-logo{
+	max-width: 300px;
+}
+/* END ABOUT */ 
+footer{
+	background-color: black;
+	color: white;
+	width: 100%;
+}
 #message{
 	text-align: center;
 }
