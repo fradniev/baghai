@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">		
+<div class="container" id="home">		
 	<div class="carousel carousel-slider valign-wrapper">
 		<a class="carousel-item gradient" href="#one!" ><img  src="<?php echo get_template_directory_uri() . '/images/carousel-inic.jpg'; ?>"></a>
 		<a class="carousel-item gradient" href="#one!" ><img src="<?php echo get_template_directory_uri() . '/images/background.jpg'; ?>"></a>
@@ -49,7 +49,7 @@
 		</div>
 	</div>
 	<!-- SERVICES -->
-	<div class="row services-text center-align">
+	<div class="row services-text center-align" id="services">
 		<div class="col s12  ">
 			<h2>OUR SERVICES</h2>
 			<div class="row">
@@ -158,7 +158,7 @@
 	</div>
 	<!-- END PARTNERS -->
 	<!-- ABOUT -->
-	<div class="row about-text center-align">
+	<div id="about" class="row about-text center-align">
 		<div class="col s12">
 			<h2>ABOUT US</h2>
 			<p>Catering to your requirements, handling your needs with care</p>
@@ -194,7 +194,7 @@
 	</div>
 	<!-- END NEWS -->
 	<!-- SUPPORT -->
-	<div class="row support-text left-align">
+	<div id="support" class="row support-text left-align">
 		<div class="col offset-s1 s6">
 			<h2>SUPPORT</h2>
 			<div class="row">
@@ -216,11 +216,11 @@
 		</div>
 	</div>	
 	<!-- END SUPPORT -->
-	<!-- SUPPORT -->
+	<!-- AIRPLANE -->
 	<div class="row airplane">
 		
 	</div>	
-	<!-- END SUPPORT -->
+	<!-- END AIRPLANE -->
 	<!-- ASSOCIATIONS -->
 	<div class="row associations center-align">
 		<div class="col s12  ">
@@ -238,7 +238,7 @@
 	</div>
 	<!-- END ASSOCIATIONS -->
 	<!-- CONTACT -->
-	<div class="row contact-text center-align">
+	<div id="contact" class="row contact-text center-align">
 		<div class="col s12">
 			<h2>CONTACT US</h2>
 			<form>
