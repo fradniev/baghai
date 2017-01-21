@@ -24,6 +24,9 @@ body{
 	margin-right: 0 !important;
 }
 /* NAVBAR */
+.marg{
+	margin-right: 5% !important;
+}
 nav{
 	height: 150px !important;
 	background-color: white !important; 
@@ -54,6 +57,22 @@ p{
 .carousel{
 	min-height: 600px !important;
 	max-height: 900px !important;
+	position: relative !important; 
+}
+.carousel-text{
+	position: absolute;
+	color:white !important;
+	left: 30%;
+}
+.gradient:after{
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) !important; 
+	width: 100%;
+	height:100%;
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: 0px;
+	display:block;
 }
 /* END Carousel */
 /* COMMERCIAL AND RESIDENCIAL */
@@ -76,7 +95,7 @@ p{
 	display: block;
 }
 #res-image{
-	background: url("../images/residential.jpg");
+	background: linear-gradient(to right,rgba(36, 97, 91, 0.6),rgba(2, 36, 97, 0.6)), url("../images/residential.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-width:500px !important;
@@ -84,7 +103,7 @@ p{
 	background-size: 500px 400px;
 }
 #com-image{
-	background: url("../images/commercial.jpg");
+	background: linear-gradient(to right,rgba(36, 97, 91, 0.6),rgba(2, 36, 97, 0.6)), url("../images/commercial.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-width:500px !important;
@@ -102,6 +121,7 @@ p{
 .services-text{
 	color:white;
 	background-color: darkblue;
+	background:linear-gradient(to right,rgba(36, 97, 91, 1),rgb(2, 36, 97));
 	min-height:300px !important;
 	margin-bottom: 0 !important;
 }
@@ -111,28 +131,29 @@ p{
 }
 .burglar{
 	color:white;
-	background: url("../images/burglar-system.jpg");
+	/*background-image: url("../images/burglar-system.jpg");*/
+	background:  linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../images/burglar-system.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 300px, cover;
 }
 .network{
 	color:white;
-	background: url("../images/network.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/network.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .interactive{
 	color:white;
-	background: url("../images/interactive.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/interactive.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .counter{
 	color:white;
-	background: url("../images/counter.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/counter.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 600px;
@@ -140,28 +161,28 @@ p{
 }
 .audio{
 	color:white;
-	background: url("../images/audio.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/audio.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .access{
 	color:white;
-	background: url("../images/access.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/access.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .fire{
 	color:white;
-	background: url("../images/fire.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/fire.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .aerial{
 	color:white;
-	background: url("../images/aerial.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/aerial.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 600px;
@@ -169,21 +190,21 @@ p{
 }
 .temperature{
 	color:white;
-	background: url("../images/temperature.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/temperature.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .intercom{
 	color:white;
-	background: url("../images/intercom.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/intercom.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .enterphone{
 	color:white;
-	background: url("../images/enterphone.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/enterphone.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
@@ -195,7 +216,7 @@ p{
 }
 .partners{
 	color:black;
-	background: url("../images/partners.jpg");
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/partners.jpg");
 	background-repeat: no-repeat;
 	min-height:384px !important;
 	max-height:384px !important;
@@ -210,21 +231,21 @@ p{
 	left:15%;
 }
 #cdvi{
-	left:25%;
+	left:35%;
 }
 #honey{
-	left: 35%;
+	left: 55%;
 }
 #inter{
-	left: 45%;
+	left: 75%;
 }
 #dsc{
-	/*bottom:55%;*/
-	left:45%;
+	bottom:50%;
+	left:35%;
 }
 #kantech{
-	/*bottom: 55%;*/
-	left:65%;
+	bottom: 50%;
+	left:55%;
 }
 /* END PARTNERS */
 /* ABOUT */ 
@@ -239,14 +260,26 @@ p{
 .divider-about{
 	background: white !important;
 }
+.div-about{
+	margin-left: 48% !important;
+}
+#canasa{
+	left:35%;
+}
+#canada{
+	left:55%;
+}
 /* END ABOUT */ 
 /* NEWS */
 .divider-news{
 	background: black !important;
 }
+.div-news{
+	margin-left: 48% !important;
+}
 .news{
 	color:black;
-	background: url("../images/news.jpg");
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/news.jpg");
 	background-repeat: no-repeat;
 	min-height:300px !important;
 	max-height:384px !important;
@@ -278,10 +311,13 @@ p{
 .divider-support{
 	background: black !important;
 }
+#supp-img{
+	max-height: 500px;
+}
 /* END SUPPORT */ 
 /* AIRPLANE */ 
 .airplane{
-	background: url("../images/airplane.jpeg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images/airplane.jpeg");
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
@@ -293,9 +329,12 @@ p{
 .divider-associations{
 	background: black !important;
 }
+.div-assoc{
+	margin-left: 47% !important;
+}
 .associations{
 	color:black;
-	background: url("../images/associations.jpg");
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/associations.jpg");
 	background-repeat: no-repeat;
 	min-height:300px !important;
 	max-height:384px !important;
@@ -319,7 +358,7 @@ p{
 /* CONTACT */ 
 .contact-text{
 	color:white;
-	background: url("../images/contact.jpg");
+	background: linear-gradient(to right,rgba(36, 97, 91, 0.8),rgba(12, 76, 113, 0.8)),url(../images/contact.jpg);
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
@@ -328,31 +367,56 @@ p{
 .divider-contact{
 	background: white !important;
 }
+.div-con{
+	margin-left: 47% !important;
+}
 .box{
   border: #solid 10px #000;
   background-color: rgba(29, 117, 132, 0.74);
   width:80%;
   margin-left: auto ;
   margin-right: auto ;
+  min-height:300px;
+}
+.input-field{
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	
+}
+.border-input {
+	border: 1px solid white !important;
+	border-bottom: 1px solid !important;
+
+}
+label{
+	color:white !important;
+}
+.contact-button{
+	margin-left: 45% !important;
+}
+.contact-button button{
+	background-color: gray !important;
 }
 /* END CONTACT */ 
 /* END */ 
 .end-text{
 	color:white;
 	background-color: #232121;
-	min-height:500px !important;
+	min-height:300px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 500px;
+	background-size: 100% 300px;
 }
 .divider-end{
 	background: white !important;
+	width: 100% !important;
+	height: 1px !important;
 }
 #white-logo{
 	max-width: 300px;
 }
-/* END ABOUT */ 
+/* END */ 
 footer{
-	background-color: black;
+	background-color: #383434;
 	color: white;
 	width: 100%;
 }

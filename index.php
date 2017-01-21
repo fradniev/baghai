@@ -1,9 +1,24 @@
 <?php get_header(); ?>
 <div class="container">		
-	<div class="carousel carousel-slider">
-		<a class="carousel-item" href="#one!"><img src="<?php echo get_template_directory_uri() . '/images/carousel-inic.jpg'; ?>"></a>
-		<a class="carousel-item" href="#one!"><img src="<?php echo get_template_directory_uri() . '/images/background.jpg'; ?>"></a>
-	
+	<div class="carousel carousel-slider valign-wrapper">
+		<a class="carousel-item gradient" href="#one!" ><img  src="<?php echo get_template_directory_uri() . '/images/carousel-inic.jpg'; ?>"></a>
+		<a class="carousel-item gradient" href="#one!" ><img src="<?php echo get_template_directory_uri() . '/images/background.jpg'; ?>"></a>
+
+	<div class="row carousel-text center-align ">
+		<div class="col offset-s4 s4">
+			<h5 style="background-color: darkblue">MAKE YOUR HOME</h5>
+		</div>
+		<div class="col s12 ">
+			<h2>AS SAFE AS POSSIBLE!</h2>
+			<p>We understand the importance of keeping your property safe, <br>
+			whether it is your home or place of business</p>
+			<div class="row">
+				<div class="col offset-s6 s2">
+					<div id="divider" class="divider-services center-align"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 	<div class="content-residencial-commercial">
 		<div class="row">
@@ -131,7 +146,7 @@
 					<div id="divider" class="divider-partners center-align"></div>
 				</div>
 			</div>
-			<div style="height: 100px">
+			<div style="height: 200px; position: relative;">
 				<img id="flir" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/Flir_Logo_black.png'; ?>">
 				<img id="cdvi" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/CDVI-Logo-2015-RVB.png'; ?>">
 				<img id="honey" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/Honeywell.png'; ?>">
@@ -148,16 +163,16 @@
 			<h2>ABOUT US</h2>
 			<p>Catering to your requirements, handling your needs with care</p>
 			<div class="row">
-				<div class="col offset-s6 s2">
+				<div class="col offset-s6 s2 div-about">
 					<div id="divider" class="divider-about center-align"></div>
 				</div>
 			</div>
-			<p>Our store is more than just another average online retailer. We sell not only top quality</p>
-			<p>products, but give our customers a positive online shoping experience. Forget about struggling</p>
-			<p>to do everything at once: taking care of the family, running your business, walking your dog,</p>
-			<p>cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like</p>
-			<p>in a few clicks or taps, depending on the device you use to access the Internet. We work to</p>
-			<p>make your life more enjoyable.</p>
+			<p>Our store is more than just another average online retailer. We sell not only top quality <br>
+			products, but give our customers a positive online shoping experience. Forget about struggling <br>
+			to do everything at once: taking care of the family, running your business, walking your dog, <br>
+			cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like <br>
+			in a few clicks or taps, depending on the device you use to access the Internet. We work to <br>
+			make your life more enjoyable.</p>
 		</div>
 	</div>	
 	<!-- END ABOUT -->
@@ -166,7 +181,7 @@
 		<div class="col s12  ">
 			<h2>IN THE NEWS</h2>
 			<div class="row">
-				<div class="col offset-s6 s2">
+				<div class="col offset-s6 s2 div-news">
 					<div id="divider" class="divider-news center-align"></div>
 				</div>
 			</div>
@@ -197,7 +212,7 @@
 			<p>For more info and support, contact us!</p>
 		</div>
 		<div class="col s4">
-			<img src="<?php echo get_template_directory_uri() . '/images/support.jpg'; ?>">
+			<img  id="supp-img" src="<?php echo get_template_directory_uri() . '/images/support.jpg'; ?>">
 		</div>
 	</div>	
 	<!-- END SUPPORT -->
@@ -211,13 +226,13 @@
 		<div class="col s12  ">
 			<h2>PROFESIONAL ASSOCIATIONS</h2>
 			<div class="row">
-				<div class="col offset-s6 s2">
+				<div class="col offset-s6 s2 div-assoc">
 					<div id="divider" class="divider-associations center-align"></div>
 				</div>
 			</div>
 			<div style="height: 100px">
 				<img id="canasa" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/canasa.png'; ?>">
-				<img id="canada" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/canada.jpg'; ?>">
+				<img id="canada" class="logos" style="width: 5% !important;" src="<?php echo get_template_directory_uri() . '/images/logos partnes/canada.png'; ?>">
 			</div>
 		</div>
 	</div>
@@ -228,28 +243,38 @@
 			<h2>CONTACT US</h2>
 			<form>
 				<div class="row">
-					<div class="col offset-s6 s2">
+					<div class="col offset-s6 s2 div-con">
 						<div id="divider" class="divider-contact center-align"></div>
 					</div>
 				</div>
 				<div class="box">
 					<div class="row">
-						<div class="input-field col s6">
-							<input id="name" type="text" class="validate">
-							<label for="name">Name</label>
+						<div class="offset-s1 col s5">
+							<div class="input-field">
+								<input id="name" type="text" class="border-input validate" required="" aria-required="true">
+								<label for="name">Name</label>
+							</div>
 						</div>
-						<div class="input-field col s6">
-							<input id="email" type="email" class="validate">
-							<label for="email">Email</label>
+						<div class="col s5">
+							<div class="input-field">
+								<input id="email" type="email" class="border-input validate" required="" aria-required="true">
+								<label for="email">Email</label>
+							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="input-field col s12">
-							<textarea id="message" class="materialize-textarea"></textarea>
-							<label for="message">Message</label>
+						<div class="col offset-s1 s10">
+							<div class="input-field">
+								<textarea id="message" class="border-input materialize-textarea" required="" aria-required="true"></textarea>
+								<label for="message">Message</label>
+							</div>
 						</div>
 					</div>
-					<button type="submit" class="waves-effect waves-light btn">Send</button>
+					<div class="row">
+						<div class="col s1 offset-s6 contact-button">
+							<button type="submit" class="waves-effect waves-light btn">Send</button>
+						</div>
+					</div>
 				</div>
 			</form>
 		</div>
@@ -269,7 +294,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col offset-s1 s12">
+				<div class="col offset-s1 s11">
 					<div id="divider" class="divider-end center-align"></div>
 				</div>
 			</div>
@@ -280,44 +305,33 @@
 					<h4>MENU</h4>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col s6">
-					<p>Home</p>
-				</div>
-				<div class="col s6">
-					<p>About</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<p>Commercial</p>
-				</div>
-				<div class="col s6">
-					<p>Support</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<p>Residential</p>
-				</div>
-				<div class="col s6">
-					<p>Contact us</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s12">
+			<div class="row center-align">
+				
+					<p>Home&emsp;
+				
+					About</p>
+				
+					<p>Commercial&emsp;
+				
+					Support</p>
+				
+			
+					<p>Residential &emsp;
+				
+					Contact us</p>
+				
+			
 					<p>Products</p>
-				</div>
 			</div>
 		</div>
-		<div class="col s4 right-align">
+		<div class="col s4 center-align">
 			<div class="row">
 				<div class="col s12">
 					<h4>CONTACT US</h4>
 				</div>
 			</div>
-			<div class="row right">
-				<div class="col 12">
+			<div class="row" style="">
+				<div class="col s12">
 					<p> 79 Occard 51, New York. NY <br> 10003, United States</p>
 					<p>hello@baghaidigital.com</p>
 					<p>(+84) 138.775.2208</p>
