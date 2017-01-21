@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
     id = id.replace("link", "");
       // Scroll
     $('html,body').animate({
-        scrollTop: $("#"+id).offset().top-180},
+        scrollTop: $("#"+id).offset().top-150},
         'slow');
 	}
 
