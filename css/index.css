@@ -1,5 +1,5 @@
 *{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'human';
 	font-weight: bold;
 }
 html, body{
@@ -23,12 +23,17 @@ body{
 .row{
 	margin-right: 0 !important;
 }
+.text{
+	font-size:1.5rem;
+	color: #d2d3d3 !important;
+}
 /* NAVBAR */
 .marg{
 	margin-right: 5% !important;
+	top:5%;
 }
 nav{
-	height: 150px !important;
+	height: 125px !important;
 	background-color: white !important; 
 	color:black;
 	position: fixed !important;
@@ -45,24 +50,30 @@ p{
 	margin: 0 auto;
 	width: 150px;
 	height: 50px;
+	margin-top:5px !important;
 }
 .container-nav{
 	width: 100% !important;
 }
 .row-info{
 	background-color:#383434;
+	height: 60px !important;
+	margin-bottom:0!important;
+	font-size: 13px;
+}
+.brand-logo{
+	margin-left: 90px;
 }
 /* NAVBAR END */
 /* Carousel */
 .carousel{
 	min-height: 600px !important;
 	max-height: 900px !important;
-	position: relative !important; 
 }
 .carousel-text{
 	position: absolute;
 	color:white !important;
-	left: 30%;
+	left: 50%;
 }
 .gradient:after{
 	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) !important; 
@@ -82,7 +93,7 @@ p{
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 850px;
 	min-height: 500px;
 	top: -15%;
 }
@@ -98,17 +109,19 @@ p{
 	background: linear-gradient(to right,rgba(36, 97, 91, 0.6),rgba(2, 36, 97, 0.6)), url("../images/residential.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-width:500px !important;
+	min-width:425px !important;
 	min-height: 400px;
-	background-size: 500px 400px;
+	background-size: 425px 425px;
+	font-size: 0.9rem;
 }
 #com-image{
 	background: linear-gradient(to right,rgba(36, 97, 91, 0.6),rgba(2, 36, 97, 0.6)), url("../images/commercial.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-width:500px !important;
+	min-width:425px !important;
 	min-height: 400px;
-	background-size: 500px 400px;
+	background-size: 425px 425px;
+	font-size: 0.9rem;
 }
 .residential{
 	color:white;
@@ -121,8 +134,8 @@ p{
 .services-text{
 	color:white;
 	background-color: darkblue;
-	background:linear-gradient(to right,rgba(36, 97, 91, 1),rgb(2, 36, 97));
-	min-height:300px !important;
+	background:linear-gradient(to right,rgb(54, 142, 133),rgb(5, 51, 134));
+	min-height:500px !important;
 	margin-bottom: 0 !important;
 }
 .divider-services{
@@ -131,29 +144,29 @@ p{
 }
 .burglar{
 	color:white;
-	/*background-image: url("../images/burglar-system.jpg");*/
-	background:  linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../images/burglar-system.jpg");
+	background-image: url("../images/burglar-system.jpg");
+	background:  linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/burglar-system.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px, cover;
 }
 .network{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/network.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/network.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .interactive{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/interactive.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/interactive.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .counter{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/counter.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/counter.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 600px;
@@ -161,28 +174,28 @@ p{
 }
 .audio{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/audio.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/audio.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .access{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/access.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/access.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .fire{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/fire.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/fire.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .aerial{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/aerial.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/aerial.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 600px;
@@ -190,21 +203,21 @@ p{
 }
 .temperature{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/temperature.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/temperature.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .intercom{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/intercom.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/intercom.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
 }
 .enterphone{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../images/enterphone.jpg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/enterphone.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
 	background-size: 100% 300px;
@@ -212,18 +225,18 @@ p{
 /* END SERVICES */
 /* PARTNERS */
 .divider-partners{
-	background: black !important;
+	background: #6d6e71 !important;
 }
 .partners{
-	color:black;
-	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/partners.jpg");
+	color:#6d6e71;
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.85),rgba(242, 242, 242, 0.85)),url("../images/partners.jpg");
 	background-repeat: no-repeat;
-	min-height:384px !important;
-	max-height:384px !important;
+	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 384px;
+	background-size: 100% 500px;
 }
 .logos{
+
 	width: 8%;
 	position: absolute;
 }
@@ -240,22 +253,28 @@ p{
 	left: 75%;
 }
 #dsc{
-	bottom:50%;
+	bottom:20%;
 	left:35%;
 }
 #kantech{
-	bottom: 50%;
+	bottom: 20%;
 	left:55%;
 }
 /* END PARTNERS */
 /* ABOUT */ 
 .about-text{
 	color:white;
-	background: url("../images/background.jpg");
+	background: url("../images/about.jpg");
 	background-repeat: no-repeat;
-	min-height:500px !important;
+	min-height:600px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 500px;
+	background-size: 100% 600px;
+}
+.subti{
+	color:white !important;
+}
+.text-ab{
+	font-size: 1.3rem;
 }
 .divider-about{
 	background: white !important;
@@ -263,106 +282,111 @@ p{
 .div-about{
 	margin-left: 48% !important;
 }
-#canasa{
-	left:35%;
-}
-#canada{
-	left:55%;
-}
+
 /* END ABOUT */ 
 /* NEWS */
 .divider-news{
-	background: black !important;
+	background: #6d6e71 !important;
 }
 .div-news{
 	margin-left: 48% !important;
 }
 .news{
-	color:black;
-	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/news.jpg");
+	color:#6d6e71;
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.85),rgba(242, 242, 242, 0.85)),url("../images/news.jpg");
 	background-repeat: no-repeat;
-	min-height:300px !important;
-	max-height:384px !important;
+	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 600px;
+	background-size: 100% 700px;
+	position: relative;
+}
+.all-news{
+	top:11%;
+	position: absolute;
 }
 .logos{
 	width: 8%;
 	position: absolute;
 }
 #bses{
+	bottom: 5%;
 	left:25%;
 }
 #tyco{
+	bottom: 5%;
 	left:45%;
 }
 #ssn{
+	bottom: -7%;
 	left: 65%;
 }
 /* END NEWS */
 /* SUPPORT */ 
 .support-text{
-	color:black;
+	color:#6d6e71;
 	background-color: white;
-	min-height:500px !important;
+	min-height:800px !important;
 	margin-bottom: 0 !important;
 	background-size: 100% 500px;
 }
 .divider-support{
-	background: black !important;
+	background: #6d6e71 !important;
 }
 #supp-img{
 	max-height: 500px;
 }
+.text-supp{
+	color:#808080;
+	font-size: 1.5rem;
+}
 /* END SUPPORT */ 
 /* AIRPLANE */ 
 .airplane{
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images/airplane.jpeg");
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images/cars.jpeg");
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 1146px;
+	background-size: 100% 1200px;
 	background-position: center;
 }
 /* END AIRPLANE */ 
 /* ASSOCIATIONS */
 .divider-associations{
-	background: black !important;
+	background: #6d6e71 !important;
 }
 .div-assoc{
 	margin-left: 47% !important;
 }
 .associations{
-	color:black;
-	background: linear-gradient(to right,rgba(242, 242, 242, 0.6),rgba(242, 242, 242, 0.6)),url("../images/associations.jpg");
+	color:#6d6e71;
+	background: linear-gradient(to right,rgba(242, 242, 242, 0.8),rgba(242, 242, 242, 0.8)),url("../images/associations.jpg");
 	background-repeat: no-repeat;
-	min-height:300px !important;
-	max-height:384px !important;
+	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 600px;
+	background-size: 100% 800px;
 }
 .logos{
-	width: 8%;
+	width: 12%;
 	position: absolute;
 }
-#bses{
-	left:25%;
+#canasa{
+	margin-top: 22.5px;
+	left:33%;
+	width: 14% !important;
 }
-#tyco{
-	left:45%;
-}
-#ssn{
-	left: 65%;
+#canada{
+	left:55%;
+	width: 8% !important;
 }
 /* END ASSOCIATIONS */
 /* CONTACT */ 
 .contact-text{
 	color:white;
-	background: linear-gradient(to right,rgba(36, 97, 91, 0.8),rgba(12, 76, 113, 0.8)),url(../images/contact.jpg);
+	background: linear-gradient(to right,rgba(56, 169, 158, 0.9),rgba(20, 115, 171, 0.9)),url(../images/contact.jpg);
 	background-repeat: no-repeat;
-	min-height:500px !important;
+	min-height:800px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 500px;
+	background-size: 100% 800px;
 }
 .divider-contact{
 	background: white !important;
@@ -372,11 +396,23 @@ p{
 }
 .box{
   border: #solid 10px #000;
-  background-color: rgba(29, 117, 132, 0.74);
+  background-color: rgba(255, 255, 255, 0.2);
   width:80%;
   margin-left: auto ;
   margin-right: auto ;
-  min-height:300px;
+  min-height:450px;
+}
+.name-email{
+	margin-top: 80px;
+}
+.name-email-row{
+	margin-bottom: 0px !important;
+}
+.message-div{
+	margin-top: 0px !important;
+}
+#message{
+	height: 100px;
 }
 .input-field{
 	margin-left: 10px !important;
@@ -390,62 +426,62 @@ p{
 }
 label{
 	color:white !important;
+	margin-left: 15px;
+	text-align: left;
 }
 .contact-button{
 	margin-left: 45% !important;
 }
 .contact-button button{
-	background-color: gray !important;
+	background-color: #c7c8c9 !important;
+	color:#58595b;
 }
 /* END CONTACT */ 
 /* END */ 
 .end-text{
 	color:white;
-	background-color: #232121;
-	min-height:300px !important;
+	background-color: #2e2e2e;
+	min-height:400px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 300px;
+	background-size: 100% 400px;
 }
 .divider-end{
-	background: white !important;
+	background:rgb(136, 132, 132) !important;
 	width: 100% !important;
 	height: 1px !important;
 }
 #white-logo{
-	max-width: 300px;
+	max-width: 150px;
+}
+.text-end{
+	color:rgb(136, 132, 132);
+	font-size:13px;
+}
+.left-end{
+	margin-left:90px !important;
 }
 /* END */ 
 footer{
-	background-color: #383434;
-	color: white;
+	background-color: #252525;
+	color: rgb(136, 132, 132);
 	width: 100%;
+	font-size: 12px;
+	max-height: 75px;
 }
-#message{
-	text-align: center;
+footer .row{
+	margin-bottom: 0px !important;
+	
 }
-
+.footer{
+	margin-left: 90px !important;
+	padding-left:0!important;
+}
 #divider{
 	height: 3px;
 	width: 80px;
 	background: #FFF;
 	border-radius: 15%;
 	margin-bottom: 15px;
-}
-
-#contact{
-	text-align: center;
-}
-#contact > *{
-	margin: 6px 0;
-}
-#copyright{
-	margin: 0 auto;
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 12px;
 }
 @media only screen and (max-width: 768px){
 	#logo{

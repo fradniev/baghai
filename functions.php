@@ -9,7 +9,7 @@
 		wp_enqueue_script( "baghai-jqs", get_template_directory_uri().'/js/jquery-3.1.1.min.js', array(), '', false );
 		wp_enqueue_script( "baghai-materializejs", get_template_directory_uri().'/css/materialize/js/materialize.js', array(), '', false );
 		wp_enqueue_script( "baghai-materializejsmin", get_template_directory_uri().'/css/materialize/js/materialize.min.js', array(), '', false );
-		wp_enqueue_script( "baghai-js", get_template_directory_uri().'/js/index.js', array(), '', true );
+		wp_enqueue_script( "baghai-js", get_template_directory_uri().'/js/index.js', array(), '', false );
 	}
 	add_action("wp_enqueue_scripts", "baghai_script_enqueue");	
 
