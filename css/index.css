@@ -1,3 +1,8 @@
+@font-face {
+	font-family: human;
+	src: url(Humans/tt0290m_.ttf);
+	font-weight: bold;
+}
 *{
 	font-family: 'human';
 	font-weight: bold;
@@ -37,6 +42,7 @@ nav{
 	background-color: white !important; 
 	color:black;
 	position: fixed !important;
+    left:0px !important;
 }
 nav ul a{
 	color:black !important;
@@ -49,7 +55,7 @@ p{
 	right: 0;
 	margin: 0 auto;
 	width: 150px;
-	height: 50px;
+	height: 45px;
 	margin-top:5px !important;
 }
 .container-nav{
@@ -60,6 +66,23 @@ p{
 	height: 60px !important;
 	margin-bottom:0!important;
 	font-size: 13px;
+	-webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+    top:0;
+    width: 100%;
+}
+.nav-up{
+	top:-60px !important;
+	position: fixed;
+	-webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.nav-hide{
+	height: 65px !important;
+
 }
 .brand-logo{
 	margin-left: 90px;
@@ -145,82 +168,90 @@ p{
 .burglar{
 	color:white;
 	background-image: url("../images/burglar-system.jpg");
-	background:  linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/burglar-system.jpg");
+	background:   url("../images/burglar-system.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px, cover;
+	background-size: 100% 100%, cover;
 }
 .network{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/network.jpg");
+	background: url("../images/network.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .interactive{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/interactive.jpg");
+	background: url("../images/interactive.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .counter{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/counter.jpg");
+	background: url("../images/counter.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 600px;
+	background-size: 100% 100%, cover;
 	background-position: center; 
 }
 .audio{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/audio.jpg");
+	background: url("../images/audio.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .access{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/access.jpg");
+	background: url("../images/access.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .fire{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/fire.jpg");
+	background: url("../images/fire.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .aerial{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/aerial.jpg");
+	background: url("../images/aerial.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 600px;
+	background-size: 100% 1000px;
+	background-position: center; 
+}
+.aerial2{
+	color:white;
+	background: url("../images/airplane.jpeg");
+	background-repeat: no-repeat;
+	min-height: 300px !important;
+	background-size: 100% 1000px;
 	background-position: center; 
 }
 .temperature{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/temperature.jpg");
+	background: url("../images/temperature.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .intercom{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/intercom.jpg");
+	background: url("../images/intercom.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 .enterphone{
 	color:white;
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/enterphone.jpg");
+	background: url("../images/enterphone.jpg");
 	background-repeat: no-repeat;
 	min-height: 300px !important;
-	background-size: 100% 300px;
+	background-size: 100% 100%;
 }
 /* END SERVICES */
 /* PARTNERS */
@@ -229,7 +260,7 @@ p{
 }
 .partners{
 	color:#6d6e71;
-	background: linear-gradient(to right,rgba(242, 242, 242, 0.85),rgba(242, 242, 242, 0.85)),url("../images/partners.jpg");
+	background: url("../images/partners.jpg");
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
@@ -304,20 +335,20 @@ p{
 	top:11%;
 	position: absolute;
 }
-.logos{
-	width: 8%;
+.logos-news{
+	width: 300px;
 	position: absolute;
 }
-#bses{
+#ssn{
 	bottom: 5%;
 	left:25%;
 }
-#tyco{
+#bses{
 	bottom: 5%;
 	left:45%;
 }
-#ssn{
-	bottom: -7%;
+#tyco{
+	bottom: -8%;
 	left: 65%;
 }
 /* END NEWS */
@@ -365,18 +396,14 @@ p{
 	margin-bottom: 0 !important;
 	background-size: 100% 800px;
 }
-.logos{
-	width: 12%;
-	position: absolute;
-}
 #canasa{
 	margin-top: 22.5px;
-	left:33%;
-	width: 14% !important;
+	left:30%;
+	width: 300px !important;
 }
 #canada{
 	left:55%;
-	width: 8% !important;
+	width: 180px !important;
 }
 /* END ASSOCIATIONS */
 /* CONTACT */ 
@@ -460,6 +487,19 @@ label{
 .left-end{
 	margin-left:90px !important;
 }
+.contact-us{
+	margin-right: 100px;
+}
+.img-cont{
+	width: 18px; 
+	margin-right: 10px;
+}
+.text-cont{
+		margin:0 !important;
+		margin-right: 65px !important;
+		margin-right: 100px !important;
+		position: relative;
+	}
 /* END */ 
 footer{
 	background-color: #252525;
@@ -476,6 +516,9 @@ footer .row{
 	margin-left: 90px !important;
 	padding-left:0!important;
 }
+.logos-social{
+	margin-right: 110px;
+}
 #divider{
 	height: 3px;
 	width: 80px;
@@ -483,9 +526,25 @@ footer .row{
 	border-radius: 15%;
 	margin-bottom: 15px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1366px){
 	#logo{
-		width: 300px;
-		height: 100px;
+		width: 150px !important;
+		height: 50px !important;
+	}
+	.contact-us{
+		margin-right: 65px !important;
+	}
+	.text-cont{
+		display: inline !important;
+		margin:0 !important;
+		margin-right: 65px !important;
+		position: relative;
+	}
+	.logos-social{
+		margin-right: 80px;
+	}
+	.img-cont{
+		width: 18px; 
+		margin-right: 10px;
 	}
 }

@@ -7,7 +7,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s6 right-align" style="margin-right: 110px" >
+				<div class="col s6 right-align logos-social" >
 					<img style="width: 2%; margin-right: 15px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/instagram.png'; ?>">
 					<img style="width: 2%; margin-right: 15px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/facebook.png'; ?>">
 					<img style="width: 2%;" src="<?php echo get_template_directory_uri() . '/images/logos partnes/twitter.png'; ?>">

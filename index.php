@@ -89,17 +89,9 @@
 		</div>
 	</div>
 	<div class="row" style="margin-bottom: 0 !important;">
-		<div class="col s12 counter valign-wrapper center-align">
-			<p>
-				Counter Surveillance
-			</p>
-		</div>
-	</div>
-	<div class="row" style="margin-bottom: 0 !important;">
-		<div class="col s4 audio valign-wrapper">
+		<div class="col s4 center-align valign-wrapper counter">
 			<p class="center-align">
-				Multi Room Audio <br>
-				Sound Systems
+				Counter Surveillance
 			</p>
 		</div>
 		<div class="col s4 center-align valign-wrapper access">
@@ -110,13 +102,6 @@
 		<div class="col s4 center-align valign-wrapper fire">
 			<p>
 				Fire alarm monitoring
-			</p>
-		</div>
-	</div>
-	<div class="row" style="margin-bottom: 0 !important;">
-		<div class="col s12 aerial valign-wrapper center-align">
-			<p>
-				Aerial Surveillance and Thermal Imaging
 			</p>
 		</div>
 	</div>
@@ -137,6 +122,20 @@
 			<p>
 				Enterphone Building <br>
 				Entry Systems
+			</p>
+		</div>
+	</div>
+	<div class="row" style="margin-bottom: 0 !important;">
+		<div class="col s12 aerial valign-wrapper center-align">
+			<p>
+				Aerial Surveillance and Thermal Imaging
+			</p>
+		</div>
+	</div>
+	<div class="row" style="margin-bottom: 0 !important;">
+		<div class="col s12 aerial2 valign-wrapper center-align">
+			<p>
+				Lorem ipsum
 			</p>
 		</div>
 	</div>
@@ -190,9 +189,9 @@
 				</div>
 			</div>
 			<div style="height: 100px; position: relative">
-				<img id="bses" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/logo.png'; ?>">
-				<img id="tyco" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/bses.png'; ?>">
-				<img id="ssn" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/tyco.png'; ?>">
+				<img id="ssn" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/logo.png'; ?>">
+				<img id="bses" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/bses.png'; ?>">
+				<img id="tyco" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/tyco.png'; ?>">
 			</div>
 		</div>
 	</div>
@@ -316,7 +315,7 @@
 		<div class="col s4 left-align">
 			<div class="row">
 				<div class="col offset-s5 s6" >
-					<h4 style="margin-top: 0 !important;">MENU</h4>
+					<h5 style="margin-top: 0 !important;">MENU</h5>
 				</div>
 			</div>
 			<div class="row left-align-align">
@@ -354,15 +353,34 @@
 		</div>
 		<div class="col s4 left-align">
 			<div class="row">
-				<div class="col offset-s5 s7 right-align" >
-					<h4 style="margin-right: 90px">CONTACT US</h4>
+				<div class="col s12 right-align" >
+					<h5 class="contact-us">CONTACT US</h5>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col offset-s6 s6 text-end">
-					<p class="valign-wrapper"><img style="width: 6%; margin-right: 10px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/location.png'; ?>"> 79 Occard 51, New York. NY <br> 10003, United States</p>
-					<p class="valign-wrapper"><img style="width: 6%; margin-right: 10px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/mail.png'; ?>">hello@baghaidigital.com</p>
-					<p class="valign-wrapper"><img style="width: 6%; margin-right: 10px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">(+84) 138.775.2208</p>
+				<div class="col s12 text-end text-cont right-align">
+					<div class="valign-wrapper">
+						<p class="text-cont"> 
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/location.png'; ?>"> 79 Occard 51, New York. NY <br> 10003, United States
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 text-end  right-align">
+					<div class="valign-wrapper">
+						<p class="text-cont">
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/mail.png'; ?>">hello@baghaidigital.com
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 text-end right-align">
+					<div class="valign-wrapper"><p class="text-cont">
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">(+84) 138.775.2208
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

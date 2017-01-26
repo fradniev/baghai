@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 	<title>Baghai Digital</title>
 	<link rel="icon" href="<?php echo get_template_directory_uri() . '/images/favicon.png'; ?>" type="image/x-icon" />
-	<script type="text/javascript" src="<?php echo get_template_directory_uri() .'/js/index.js'"></script>
 	<nav class="navbar-fixed">
 		<div class="nav-wrapper">
 			<div class="container">
-				<div class="row row-info">
+				<div class="row row-info nav-down">
 					<div class="col s2 valign-wrapper" style="margin-left: 90px; ">
 						<img style="width: 8%; margin-right: 5px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/mail.png'; ?>">
 						hello@baghaidigital.com
