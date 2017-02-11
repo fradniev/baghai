@@ -1,4 +1,6 @@
 jQuery(document).ready(function($){
+    $('.carousel.carousel-slider').carousel({full_width: true});
+    //window.setInterval(function(){$('.carousel').carousel('next')},9500);
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -39,8 +41,6 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-    $('.carousel.carousel-slider').carousel({full_width: true});
-    window.setInterval(function(){$('.carousel').carousel('next')},9500);
 
 	function goToByScroll(id, offset){
      // Remove "link" from the ID

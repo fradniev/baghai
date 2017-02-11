@@ -21,9 +21,20 @@ body{
 	align-items: center;
 
 	position: relative;
+	height: 100%;
+}
+.make-home{
+	width: 30% !important;
+	left: 60%;
+}
+#home{
+	height: 100%
 }
 .container{
 	min-width: 100% !important;
+	min-height: 100%;
+	height:100% !important;
+	width: 100vw !important;
 }
 .row{
 	margin-right: 0 !important;
@@ -33,12 +44,15 @@ body{
 	color: #d2d3d3 !important;
 }
 /* NAVBAR */
+.menu-item a{
+	color:rgb(90, 90, 90) !important !important;
+}
 .marg{
 	margin-right: 5% !important;
 	top:5%;
 }
 nav{
-	height: 125px !important;
+	/*height: 125px !important;*/
 	background-color: white !important; 
 	color:black;
 	position: fixed !important;
@@ -54,9 +68,13 @@ p{
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 150px;
-	height: 45px;
+	width: 120px;
+	height: 40px;
 	margin-top:5px !important;
+	transform: translate(0, 20%); 
+}
+.logos-link:hover{
+	cursor: pointer;
 }
 .container-nav{
 	width: 100% !important;
@@ -79,24 +97,38 @@ p{
 	position: fixed;
 	-webkit-transform: translateY(-100%);
     transform: translateY(-100%);
+    margin:0;
+}
+.nav-down{
+	margin:0 !important;
 }
 .nav-hide{
 	height: 65px !important;
 
 }
 .brand-logo{
-	margin-left: 90px;
+	margin-left: 108px;
 }
 /* NAVBAR END */
 /* Carousel */
-.carousel{
-	min-height: 600px !important;
-	max-height: 900px !important;
+.car{
+	position: relative; 
 }
+.make-home-div{
+	position: relative;
+	bottom: 50%;
+}
+.carousel-test{
+	margin-top:65px;
+}
+.carousel.carousel-slider{
+	height: calc(100vh) !important;
+}
+
 .carousel-text{
 	position: absolute;
 	color:white !important;
-	left: 50%;
+	width: 100%;
 }
 .gradient:after{
 	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) !important; 
@@ -109,7 +141,13 @@ p{
 	display:block;
 }
 /* END Carousel */
-/* COMMERCIAL AND RESIDENCIAL */
+/* COMMERCIAL AND RESIDENTIAL */
+.h-res-com{
+	margin:0;
+}
+.div-res-com{
+	margin-top:15px;
+}
 .res-com{
 	position: absolute;
 	left:0;
@@ -152,8 +190,19 @@ p{
 .commercial{
 	color:white;
 }
+.text-com-res{
+	font-size: 16px;
+}
+.learn{
+	margin:0;
+	text-align: right;
+}
+.learn-com{
+	margin-top: 75px;
+}
 /* END COMMERCIAL AND RESIDENCIAL */
 /* SERVICES */
+
 .services-text{
 	color:white;
 	background-color: darkblue;
@@ -161,114 +210,96 @@ p{
 	min-height:500px !important;
 	margin-bottom: 0 !important;
 }
+.text-serv{
+	font-size: 25px;
+}
 .divider-services{
 	left:-15%;
 	position: relative;
 }
-.burglar{
+.img-serv{
+	position: relative;
+	display:block;
 	color:white;
-	background-image: url("../images/burglar-system.jpg");
-	background:   url("../images/burglar-system.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%, cover;
+	min-height: 100% !important;
 }
-.network{
-	color:white;
-	background: url("../images/network.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.div-img{
+	position: relative;
+	width: 33.33% !important;
 }
-.interactive{
-	color:white;
-	background: url("../images/interactive.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.div-img img{
+	height: 100%;
+	width: 100%;
 }
-.counter{
-	color:white;
-	background: url("../images/counter.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%, cover;
-	background-position: center; 
+.div-img p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%); 
+	text-align: center; 
 }
-.audio{
-	color:white;
-	background: url("../images/audio.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.div-img-large{
+	position: relative;
+	height: 33.33% !important;
+	width: 100% !important;
 }
-.access{
-	color:white;
-	background: url("../images/access.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.div-img-large img{
+	height: 100%;
+	width: 100%;
 }
-.fire{
-	color:white;
-	background: url("../images/fire.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.div-img-large p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%); 
+	-webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+	text-align: center; 
 }
-.aerial{
-	color:white;
-	background: url("../images/aerial.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 1000px;
-	background-position: center; 
-}
-.aerial2{
-	color:white;
-	background: url("../images/airplane.jpeg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 1000px;
-	background-position: center; 
-}
-.temperature{
-	color:white;
-	background: url("../images/temperature.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
-}
-.intercom{
-	color:white;
-	background: url("../images/intercom.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
-}
-.enterphone{
-	color:white;
-	background: url("../images/enterphone.jpg");
-	background-repeat: no-repeat;
-	min-height: 300px !important;
-	background-size: 100% 100%;
+.grid{
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */ 
+	display: -webkit-flex; /* NEW - Chrome */ 
+	display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ 
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	width: 100% !important;
+	margin:0 auto;
 }
 /* END SERVICES */
 /* PARTNERS */
 .divider-partners{
 	background: #6d6e71 !important;
 }
+.div-parnters{
+	margin-left: 46% !important;
+}
+.div-recommend{
+	margin-left: 47% !important;
+}
+.divider-recommend{
+	background: #6d6e71 !important;
+}
 .partners{
 	color:#6d6e71;
-	background: url("../images/partners.jpg");
+	/*background: linear-gradient(to right,rgba(242, 242, 242, 0.85),rgba(242, 242, 242, 0.85));
 	background-repeat: no-repeat;
-	min-height:500px !important;
-	margin-bottom: 0 !important;
-	background-size: 100% 500px;
+	background-size: 100% 1000px;*/
+	
+	margin: 0 !important;
+	position: relative;
+}
+.div-img-large img{
+	min-height: 100%;
 }
 .logos{
-
-	width: 8%;
+	width: 10%;
 	position: absolute;
 }
 #flir{
@@ -278,10 +309,13 @@ p{
 	left:35%;
 }
 #honey{
+	bottom: 75%;
 	left: 55%;
+	width: 12%
 }
 #inter{
 	left: 75%;
+	width: 12%
 }
 #dsc{
 	bottom:20%;
@@ -290,6 +324,22 @@ p{
 #kantech{
 	bottom: 20%;
 	left:55%;
+}
+.recommend{
+	position: absolute;
+	width: 100% !important;
+	top: 70%;
+	transform: translate(0, -50%); 
+	-webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+.part-log-tittle{
+	top: 15%;
+	position: absolute;
+}
+.text-re{
+	font-size: 20px;
+	word-wrap: normal;
 }
 /* END PARTNERS */
 /* ABOUT */ 
@@ -305,7 +355,7 @@ p{
 	color:white !important;
 }
 .text-ab{
-	font-size: 1.3rem;
+	font-size: 20px;
 }
 .divider-about{
 	background: white !important;
@@ -364,20 +414,22 @@ p{
 	background: #6d6e71 !important;
 }
 #supp-img{
-	max-height: 500px;
+	height: 20%;
 }
 .text-supp{
 	color:#808080;
 	font-size: 1.5rem;
+	text-align: justify;
+	word-wrap: normal;
 }
 /* END SUPPORT */ 
 /* AIRPLANE */ 
 .airplane{
-	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images/cars.jpeg");
+	background: url("../images/cars.jpeg");
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 1200px;
+	background-size: 100% 100%;
 	background-position: center;
 }
 /* END AIRPLANE */ 
@@ -419,7 +471,7 @@ p{
 	background: white !important;
 }
 .div-con{
-	margin-left: 47% !important;
+	margin-left: 48% !important;
 }
 .box{
   border: #solid 10px #000;
@@ -488,18 +540,45 @@ label{
 	margin-left:90px !important;
 }
 .contact-us{
-	margin-right: 100px;
+	margin-top: 0;
+	margin-left: 100px;
 }
 .img-cont{
 	width: 18px; 
 	margin-right: 10px;
+	margin-left: 100px !important;
 }
 .text-cont{
-		margin:0 !important;
-		margin-right: 65px !important;
-		margin-right: 100px !important;
-		position: relative;
-	}
+	margin:0 !important;
+	position: relative;
+}
+.homeend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.resend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.comend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.aboutend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.supportend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.contactend-a:hover{
+	cursor:pointer;
+	background-color: #383535;
+}
+.end-rows{
+	padding-top:100px !important;
+}
 /* END */ 
 footer{
 	background-color: #252525;
@@ -519,6 +598,12 @@ footer .row{
 .logos-social{
 	margin-right: 110px;
 }
+.logos-social-a{
+	text-decoration: none;
+	font-size: 30px !important;
+	margin-right: 8px; 
+	color:rgb(136, 132, 132);
+}
 #divider{
 	height: 3px;
 	width: 80px;
@@ -526,12 +611,91 @@ footer .row{
 	border-radius: 15%;
 	margin-bottom: 15px;
 }
+.menu-header li,
+    div.menu li {
+    float: left;
+    position: relative;
+    left: -15%;
+}
+ 
+.menu-header ul ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    float: left;
+    width: 180px;
+    z-index: 99999;
+}
+.menu-header a {
+    color: gray;
+    display: block;
+    line-height: 41px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.menu-header ul li:hover > ul {
+    display: block;
+}
+.menu-header li:hover > a,
+.menu-header ul ul :hover > a {
+    background: gray;
+    color:gray;
+}
+.menu-header ul ul a {
+    background: white;
+    line-height: 1em;
+    padding: 10px;
+    width: 160px;
+    height: auto;
+}
+.menu-header {
+    display: block;
+    float: right;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-top:5px !important;
+}
+nav ul a{
+	font-size:17px !important;
+}
+@media only screen and (min-width: 1025px){
+	#normal{
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 994px){
+	.logo-top{
+		left:-20% !important;
+		margin: 0 !important; 
+		position: relative;
+	}
+}
+@media only screen and (max-width: 1024px){
+	.menu-drop{
+		background-image: url('../images/drop.png');
+		min-height: 50px;
+		min-width: 30px;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size:contain;
+		background-color: white !important;
+		padding-left: 5px;
+	}
+}
 @media only screen and (max-width: 1366px){
+	#small{
+		display:block !important;
+	}
 	#logo{
-		width: 150px !important;
-		height: 50px !important;
+		width: 120px !important;
+		height: 40px !important;
+		transform: translate(0, 20%); 
 	}
 	.contact-us{
+		margin-top: 0;
 		margin-right: 65px !important;
 	}
 	.text-cont{
@@ -546,5 +710,173 @@ footer .row{
 	.img-cont{
 		width: 18px; 
 		margin-right: 10px;
+	}
+	.logos-news{
+		width: 200px;
+	}
+	#canasa{
+		left:22%;
+		width:250px !important;
+	}
+	#canada{
+		left:60%;
+		width: 130px !important;
+	}
+	.logos{
+		width: 12%;
+	}
+	.phone{
+		left:8% !important;
+		width: 22.22% !important;
+	}
+	.logo-top{
+		position: relative;
+		margin:0 !important;
+	}
+	#ssn{
+		left:15%;
+	}
+	#bses{
+		left:45%;
+	}
+	#tyco{
+		left: 75%;
+	}
+	#honey{
+		width: 13% !important;
+		bottom: 77%;
+	}
+	#kantech{
+		width: 13% !important;
+		bottom: 21%;
+	}
+	#inter{
+		width: 16% !important;
+	}
+	.div-con{
+		margin-left: 47% !important;
+	}
+	.div-news{
+		margin-left: 47% !important;
+	}
+	.div-about{
+		margin-left: 47% !important;
+	}
+	.div-parnters{
+		margin-left: 45.5% !important;
+	}
+	.div-recommend{
+	margin-left: 47% !important;
+}
+	#supp-img{
+		width: 95%;
+	}
+	.img-cont{
+		margin-left: 100px !important;
+	}
+	.text-cont{
+		margin:0 !important;
+		position: relative;
+	}
+	.text-cont img{
+		margin-left: -28px !important;
+	}
+	.make-home{
+		width: 45% !important;
+		left: 55%;
+	}
+	.part-log-tittle{
+		top: 6%;
+	}
+	.recommend{
+		top: 73%;
+	}
+}
+@media only screen and (max-device-width: 667px){
+	.carousel-text{
+		top:8% !important;
+	}
+	.text{
+		font-size: 30px !important;
+	}
+	.car h1{
+		font-size: 40px;
+	}
+	.make-home{
+		width: 60% !important;
+		left: 47%;
+	}
+	.make-home-div h4{
+		font-size: 35px;
+	}
+	#res-image{
+		min-height: 500px;
+		min-width: 500px !important;
+		background-size: 500px 500px;
+	}
+	#com-image{
+		min-height: 500px;
+		min-width: 500px !important;
+		background-size: 500px 500px;
+
+	}
+	.text-com-res{
+		font-size: 22px;
+	}
+	#rescom{
+		min-height: 900px;
+	}
+	#res-image{
+		margin-left:25% !important;
+		margin-right: :25% !important;
+	}
+	#com-image{
+		margin-left:25% !important;
+		margin-right: :25% !important;
+	}
+	.text-supp{
+		font-size: 1.6rem;
+	}
+	.text-ab{
+		font-size: 25px;
+	}
+	.div-img{
+		width: 100% !important;
+	}
+	.div-img p{
+		font-size: 50px;
+	}
+	.div-img-large p{
+		font-size: 50px;
+	}
+	.part-log-tittle{
+		top: 10% !important;
+	}
+	.part-log-tittle h2{
+		font-size: 35px;
+	}
+	#honey{
+		bottom: 83%;
+	}
+	#dsc{
+		bottom: 43.5%;
+	}
+	#kantech{
+		bottom: 45%;
+	}
+	.aerial{
+		height: 500px !important;
+	}
+	.aerial2{
+		height: 500px !important;
+	}
+	.div-partn{
+		height: 800px !important;
+	}
+	.cars{
+		height: 500px !important;
+	}
+	.text-re{
+		font-size:25px;
 	}
 }

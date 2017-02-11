@@ -8,12 +8,14 @@
 					</div>
 				</div>
 				<div class="col s6 right-align logos-social" >
-					<img style="width: 2%; margin-right: 15px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/instagram.png'; ?>">
-					<img style="width: 2%; margin-right: 15px" src="<?php echo get_template_directory_uri() . '/images/logos partnes/facebook.png'; ?>">
-					<img style="width: 2%;" src="<?php echo get_template_directory_uri() . '/images/logos partnes/twitter.png'; ?>">
+					<a target="_blank" class="logos-social-a" href="https://www.instagram.com/BaghaiDigital/"><i class="fa fa-instagram fa-3g" aria-hidden="true"></i></a>
+					<a target="_blank" class="logos-social-a" href="https://www.facebook.com/BaghaiDigital/"><i class="fa fa-facebook-square fa-3g" aria-hidden="true"></i></a>
+					<a target="_blank" class="logos-social-a" href="https://twitter.com/BaghaiDigital"><i class="fa fa-twitter-square fa-3g" aria-hidden="true"></i></a>
+					<a target="_blank" class="logos-social-a" href="https://ca.linkedin.com/in/sean-baghai-ba391a1"><i class="fa fa-linkedin-square fa-3g" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>
+		</div>
 	</body>
 </html>
