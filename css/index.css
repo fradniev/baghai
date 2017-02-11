@@ -792,7 +792,7 @@ nav ul a{
 		top: 73%;
 	}
 }
-@media only screen and (max-device-width: 667px){
+@media only screen and (max-width: 667px){
 	.carousel-text{
 		top:8% !important;
 	}
