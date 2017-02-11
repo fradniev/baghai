@@ -203,7 +203,7 @@
 				Honeywell Security and Fire <br>
 				District Manager.
 				</p>
-				<p class="text-re">&ldquo;Honeywell Security and Fire is proud to have Bahai Digital as an installer of Honeywell Security
+				<p class="text-re">&ldquo;Honeywell Security and Fire is proud to have Baghai Digital as an installer of Honeywell Security
 				
 				Products. Baghai is a long standing supplier of quality products and workmanship in the security
 				
@@ -267,7 +267,7 @@
 	<!-- END SUPPORT -->
 	<!-- CARS -->
 	<div class="grid">
-		<div class="div-img-large cars">
+		<div class="valign-wrapper div-img-large cars">
 			<img src="<?php echo get_template_directory_uri() . '/images/cars.jpg'; ?>">
 		</div>
 	</div>	

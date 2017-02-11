@@ -295,9 +295,7 @@ p{
 	margin: 0 !important;
 	position: relative;
 }
-.div-img-large img{
-	min-height: 100%;
-}
+
 .logos{
 	width: 10%;
 	position: absolute;
@@ -332,10 +330,12 @@ p{
 	transform: translate(0, -50%); 
 	-webkit-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
+    left: 0;
 }
 .part-log-tittle{
 	top: 15%;
 	position: absolute;
+	left: 0 !important;
 }
 .text-re{
 	font-size: 20px;
@@ -793,7 +793,7 @@ nav ul a{
 		top: 73%;
 	}
 }
-@media only screen and (max-width: 667px){
+@media only screen and (max-device-width: 1080px){
 	.carousel-text{
 		top:8% !important;
 	}
@@ -865,17 +865,8 @@ nav ul a{
 	#kantech{
 		bottom: 45%;
 	}
-	.aerial{
-		height: 500px !important;
-	}
-	.aerial2{
-		height: 500px !important;
-	}
 	.div-partn{
 		height: 800px !important;
-	}
-	.cars{
-		height: 500px !important;
 	}
 	.text-re{
 		font-size:25px;
