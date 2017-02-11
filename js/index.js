@@ -53,31 +53,31 @@ function hasScrolled() {
 
 	$(".services-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('services', 120);
+		goToByScroll('services', 60);
 	});
 	$(".res-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('rescom', 188);
+		goToByScroll('rescom', 125);
 	});
 	$(".com-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('rescom', 188);
+		goToByScroll('rescom', 220);
 	});
 	$(".about-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('about', 120);
+		goToByScroll('about', 64);
 	});
 	$(".support-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('support', 120);
+		goToByScroll('support', 60);
 	});
 	$(".contact-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('contact', 120);
+		goToByScroll('contact', 60);
 	});
 	$(".home-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('home', 120);
+		goToByScroll('home', 60);
 	});
 	
 });
