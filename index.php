@@ -217,18 +217,14 @@
 	<div id="about" class="row about-text center-align valign-wrapper">
 		<div class="col s12">
 			<h2><b>ABOUT US</b></h2>
-			<p class="text subti">Catering to your requirements, handling your needs with care</p>
+			<p class="text subti">Customer satisfaction is our pride and drive</p>
 			<div class="row">
 				<div class="col offset-s6 s2 div-about">
 					<div id="divider" class="divider-about center-align"></div>
 				</div>
 			</div>
-			<p class="text-ab">Our store is more than just another average online retailer. We sell not only top quality <br>
-			products, but give our customers a positive online shoping experience. Forget about struggling <br>
-			to do everything at once: taking care of the family, running your business, walking your dog, <br>
-			cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like <br>
-			in a few clicks or taps, depending on the device you use to access the Internet. We work to <br>
-			make your life more enjoyable.</p>
+			<p class="text-ab">Baghai Digital has been in business for 30 years and has accumulated over 500 clients throughout Southwestern Ontario. Our experienced and dedicated team will ensure that your needs are fulfilled and that you are satisfied with our services. To eliminate false alarms and ensure greater reliability, we use several algorithms, continuous monitoring polling functions and follow ups in order to ensure that our customers have a working system all the time.
+			</p>
 		</div>
 	</div>	
 	<!-- END ABOUT -->

@@ -356,6 +356,7 @@ p{
 }
 .text-ab{
 	font-size: 20px;
+	word-wrap: normal;
 }
 .divider-about{
 	background: white !important;
