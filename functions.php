@@ -24,9 +24,9 @@
 	}
 	add_action('init', 'register_my_menus');
 	function send_email(){
-		if(isset($_POST['submit'])){
+		if(isset($_POST['name'] )){
 			$email=$_POST['email'];
-			$email_to="sean@baghaidigital.net";
+			$email_to="xerdrein@gmail.com";
 			$name=$_POST['name'];
 			$subject=$email.' - '.$name;
 			$message=$_POST['message'];

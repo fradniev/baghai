@@ -8,7 +8,7 @@
 		<div class="row carousel-text center-align" style="top:50%;">
 			<div class="car">
 				<div class="col s8 make-home-div" >
-					<h4 class="make-home" style=" background-color: darkblue; position: relative; background-size: 100px;">MAKE YOUR HOME</h4>
+					<h4 class="make-home" style=" background-color: darkblue; position: relative; background-size: 100px;">MAKE YOUR PROPERTY</h4>
 				</div>
 				<div class="col s12">
 					<h1><b>AS SAFE AS POSSIBLE!</b></h1>
@@ -85,8 +85,8 @@
 					<div id="divider" class="divider-services center-align"></div>
 				</div>
 			</div>
-			<p class="text">Whether you are a homeowner, government contractor, institution, <br>
-			or business, we can customize a security surveillance system <br>
+			<p class="text-serv">Whether you are a Homeowner, Government, Contractor, Institution, 
+			or Business, we can customize a security surveillance system 
 			to fit your needs at a prices that works for you.</p>
 		</div>
 	</div>
@@ -109,9 +109,9 @@
 		<div class="center-align valign-wrapper interactive text-serv serv div-img img-serv" >
 			<img src="<?php echo get_template_directory_uri() . '/images/interactive.jpg'; ?>">
 			<p>
-				Interactrive apps and <br>
-				remote control <br>
-				and automation
+				Interactrive Apps and <br>
+				Remote Control <br>
+				and Automation
 			</p>
 		</div>
 		<div class="center-align valign-wrapper counter text-serv serv div-img img-serv">
@@ -129,7 +129,7 @@
 		<div class="center-align valign-wrapper fire text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/fire.jpg'; ?>">
 			<p>
-				Fire alarm monitoring
+				Fire Alarm Monitoring
 			</p>
 		</div>
 		<div class="temperature valign-wrapper text-serv serv div-img img-serv">
@@ -156,18 +156,21 @@
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
 		<div class="aerial valign-wrapper center-align text-serv div-img-large img-serv">
-			<img  src="<?php echo get_template_directory_uri() . '/images/aerial.jpg'; ?>">
+			
 			<p>
 				Aerial Surveillance and Thermal Imaging
 			</p>
 		</div>
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
-		<div class="aerial2 valign-wrapper center-align text-serv div-img-large img-serv">
-			<img  src="<?php echo get_template_directory_uri() . '/images/airplane.jpeg'; ?>">
-			<p>
-				
+		<div class="aerial2 valign-wrapper center-align text-re div-img-large img-serv">
+			
+			<p class="text-aerial2-1 text-re" >&ldquo;
+				FLIR recommends Baghai Digital as a premier installation and service dealer of FLIR Security Products.  Their staff is competent, professional, and their level of technical expertise is at a much higher level than the industry norm
+				&ldquo;
 			</p>
+			<h4 style="text-align: right !important;">- Jim Pratt</h4>
+			<p class="text-aerial2-2 text-re" style="text-align: right !important; margin: auto;">Director, Distribution Sales, Northern Region</p>
 		</div>
 	</div>
 	<!-- END SERVICES -->
@@ -197,18 +200,24 @@
 				<div id="divider" class="divider-recommend center-align"></div>
 			</div>
 			<div class="col s12 center-align">
-				<h3><b>Steve Ricker</b></h3>
-				<p class="center-align text-re">
+				<div class="text-re">
+					<p>&ldquo;Honeywell Security and Fire is proud to have Baghai Digital as an installer of Honeywell Security
 					
-				Honeywell Security and Fire <br>
-				District Manager.
-				</p>
-				<p class="text-re">&ldquo;Honeywell Security and Fire is proud to have Baghai Digital as an installer of Honeywell Security
-				
-				Products. Baghai is a long standing supplier of quality products and workmanship in the security
-				
-				industry delivering superior customer service. I would highly recommend Baghai for any of your security needs.&rdquo;
-				</p>
+					Products. Baghai is a long standing supplier of quality products and workmanship in the security
+					
+					industry delivering superior customer service. I would highly recommend Baghai for any of your security needs.&rdquo;</p>
+					<h4 style="text-align: right !important;">- Steve Ricker</h4>
+					<p style="text-align: right !important; margin: auto;">Honeywell Security and Fire District Manager</p>
+				</div>
+			</div>
+			<br>
+			<div class="col s12 center-align">
+				<div class="text-re text-2-part">
+					<p>&ldquo;
+					Baghai Digital has been installing Speco Technologies’ security products for over a decade, and we are thrilled to call them a partner.  They know our products inside and out and we have no hesitation to recommend them for any security job.
+					&rdquo;</p>
+					<h4 style="text-align: right !important;">- Scott Pisani</h4>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -223,7 +232,7 @@
 					<div id="divider" class="divider-about center-align"></div>
 				</div>
 			</div>
-			<p class="text-ab">Baghai Digital has been in business for 30 years and has accumulated over 500 clients throughout Southwestern Ontario. Our experienced and dedicated team will ensure that your needs are fulfilled and that you are satisfied with our services. To eliminate false alarms and ensure greater reliability, we use several algorithms, continuous monitoring polling functions and follow ups in order to ensure that our customers have a working system all the time.
+			<p class="text-ab">Baghai Digital has been in business for 30 years and services clients throughout Southwestern Ontario. Our experienced and dedicated team will ensure that your needs are fulfilled and that you are satisfied with our services. To eliminate false alarms and ensure greater reliability, we use several algorithms, continuous monitoring polling functions and follow ups in order to ensure that our customers have a working system all the time.
 			</p>
 		</div>
 	</div>	
@@ -239,7 +248,7 @@
 			</div>
 			<div style="height: 100px; position: relative">
 				<a class="logos-link" target="_blank" href=" http://www.securitysystemsnews.com/article/20-under-40-class-2008"><img id="ssn" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/logo.png'; ?>"></a>
-				<a class="logos-link" target="_blank" href="http://www.bsesdelhi.com/HTML/index.html"><img id="bses" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/bses.png'; ?>"></a>
+				<a class="logos-link" target="_blank" href="#"><img id="bses" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/canasa.png'; ?>"></a>
 				<a class="logos-link" target="_blank" href="https://www.tycosecurityproducts.com/RSCS_Avondale.aspx"><img id="tyco" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/tyco.png'; ?>"></a>
 			</div>
 		</div>
@@ -247,7 +256,7 @@
 	<!-- END NEWS -->
 	<!-- SUPPORT -->
 	<div id="support" class="row support-text left-align valign-wrapper">
-		<div class="col offset-s1 s6">
+		<div class="col offset-s1 s6 text-supp-div">
 			<h2><b>SUPPORT</b></h2>
 			<div class="row">
 				<div class="col s2 div-supp">
@@ -260,7 +269,7 @@
 				When you call us, you always talk to one of our team members, not an automated machine. Without any runaround your profile, history and any issues are immediately identified and rectified.  We know you are busy and have taken the time and effort to call us, we want you happy.
 			<p class="text-supp">For more information and support, contact us at (416) 449-5992</p>
 		</div>
-		<div class="col s4" style="margin-left: 50px;">
+		<div class="col s4 supp-img-div valign-wrapper" style="margin-left: 50px;">
 			<img  id="supp-img" src="<?php echo get_template_directory_uri() . '/images/support.png'; ?>">
 		</div>
 	</div>	
@@ -310,24 +319,21 @@
 				</div>
 				<div class="box">
 					<div class="row name-email-row">
-						<div class="offset-s1 col s5 name-email">
+						<div class="offset-s1 col s5 name-email name-box">
 							<div class="input-field">
-								<input id="name" name="name" type="text" class="border-input validate" required="" aria-required="true">
-								<label for="name" class="label-contact">Name</label>
+								<input placeholder="Name" id="name" name="name" type="text" class="border-input validate" required="" aria-required="true">
 							</div>
 						</div>
-						<div class="col s5 name-email">
+						<div class="col s5 name-email email-box">
 							<div class="input-field">
-								<input id="email" name="email" type="email" class="border-input validate" required="" aria-required="true">
-								<label for="email" class="label-contact">Email</label>
+								<input placeholder="Email" id="email" name="email" type="email" class="border-input validate" required="" aria-required="true">
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col offset-s1 s10">
+						<div class="col offset-s1 s10 message-box">
 							<div class="input-field message-div">
-								<textarea id="message" name="message" class="border-input materialize-textarea" required="" aria-required="true"></textarea>
-								<label for="message">Message</label>
+								<textarea placeholder="Message" id="message" name="message" class="border-input materialize-textarea" required="" aria-required="true"></textarea>
 							</div>
 						</div>
 					</div>
