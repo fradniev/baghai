@@ -402,11 +402,15 @@ p{
 }
 #dsc{
 	bottom:20%;
-	left: 30%;
+	left: 19%;
 }
 #kantech{
 	bottom: 20%;
-	left:55%;
+	left:67%;
+}
+#speco{
+	bottom: 20%;
+	left:43%;
 }
 .recommend{
 	position: absolute;
@@ -879,7 +883,7 @@ nav ul a{
 		left:77%;
 	}
 	#dsc{
-		left: 30%;
+		left: 18%;
 	}
 	#canasa{
 		left:22%;
@@ -918,6 +922,10 @@ nav ul a{
 	#kantech{
 		width: 13% !important;
 		bottom: 21%;
+		left: 69%;
+	}
+	#speco{
+		left: 44%;
 	}
 	#inter{
 		width: 16% !important;
@@ -1018,7 +1026,7 @@ nav ul a{
 		font-size: 50px;
 	}
 	.part-log-tittle{
-		top: 10% !important;
+		top: 5% !important;
 	}
 	.logos{
 		width: 20%;
@@ -1335,5 +1343,10 @@ nav ul a{
 	}
 	.div-partn{
 		display: none !important;
+	}
+	#speco{
+		width: 25% !important;
+		bottom: -62%;
+		left: 36%;
 	}
 }

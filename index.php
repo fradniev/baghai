@@ -198,6 +198,7 @@
 				<a class="logos-link" target="_blank" href="http://www.interlogix.com/"><img id="inter" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/interlogix.png'; ?>"></a>
 				<a class="logos-link" target="_blank" href="http://www.dsc.com/"><img id="dsc" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/DSC.png'; ?>"></a>
 				<a class="logos-link" target="_blank" href="http://www.kantech.com/"><img id="kantech" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/kantech.png'; ?>"></a>
+				<a class="logos-link" target="_blank" href="http://www.specotech.com/"><img id="speco" class="logos" src="<?php echo get_template_directory_uri() . '/images/logos partnes/speco.png'; ?>"></a>
 			</div>
 		</div>
 		<div class="row recommend">
