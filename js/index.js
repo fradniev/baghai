@@ -18,7 +18,7 @@ setInterval(function() {
     }
 }, 250);
 
-function hasScrolled() {
+/*function hasScrolled() {
     var st = $(this).scrollTop();
     
     // Make sure they scroll more than delta
@@ -40,7 +40,7 @@ function hasScrolled() {
     }
     
     lastScrollTop = st;
-}
+}*/
 
 	function goToByScroll(id, offset){
      // Remove "link" from the ID

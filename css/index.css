@@ -73,6 +73,16 @@ p{
 	margin-top:5px !important;
 	transform: translate(0, 20%); 
 }
+.logos-link-ubic{
+	text-decoration: none;
+	color:rgb(136, 132, 132);
+	font-size: 13px;
+	position: absolute;
+	width: 270px;
+	height: 38px;
+	left: 17%;
+	z-index: 1;
+}
 .logos-link:hover{
 	cursor: pointer;
 }
@@ -283,7 +293,7 @@ p{
 }
 .div-img-large img{
 
-	z-index: -1;
+	z-index: -5;
 	height: 100%;
 	width: 100%;
 }
@@ -319,8 +329,27 @@ p{
 	width: 100% !important;
 	margin:0 auto;
 }
+.flir-ther{
+	height: auto !important;
+	top: 10% !important;
+	left: 10% !important;
+}
+.text-logo-flir{
+	font-size: 20px !important;
+	top: 25% !important;
+	text-align: left !important;
+	width: 80% !important;
+	margin:auto !important;
+}
 /* END SERVICES */
 /* PARTNERS */
+.re-message{
+	margin-top: 0 !important;
+	margin-bottom:0 !important;
+}
+.row-text-partn1{
+	margin-top: 200px;
+}
 .divider-partners{
 	background: #6d6e71 !important;
 }
@@ -342,29 +371,38 @@ p{
 	margin: 0 !important;
 	position: relative;
 }
-
+.partners{
+	background: url("../images/partners.jpg");
+	background-repeat: no-repeat;
+	min-height:1500px !important;
+	margin-bottom: 0 !important;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
 .logos{
-	width: 10%;
+	z-index: 1 !important;
+	width: 10% !important;
 	position: absolute;
 }
 #flir{
-	left:15%;
+	left: 9%;
 }
 #cdvi{
-	left:35%;
+	left: 29%;
 }
 #honey{
 	bottom: 75%;
 	left: 55%;
-	width: 12%
+	width: 12% !important;
 }
 #inter{
-	left: 75%;
-	width: 12%
+	left:77%;
+	width: 12% !important;
 }
 #dsc{
 	bottom:20%;
-	left:35%;
+	left: 30%;
 }
 #kantech{
 	bottom: 20%;
@@ -373,11 +411,14 @@ p{
 .recommend{
 	position: absolute;
 	width: 100% !important;
-	top: 70%;
+	top: 75%;
 	transform: translate(0, -50%); 
 	-webkit-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     left: 0;
+}
+.recommend > .col{
+	margin: 20px 0;
 }
 .part-log-tittle{
 	top: 15%;
@@ -390,21 +431,27 @@ p{
 	width: 80%;
 	margin: auto;
 }
-.text-re-foot h4{
-	text-align: right;
+.text-re p.re-message{
+	margin-bottom: 0px;
 }
-.text-re-foot p{
-	text-align: right;
+.text-re h4.re-customer{
+	text-align: right !important;
+	margin-top: 0px;
+}
+.text-re p.re-customer-title{
+	text-align: right !important;
+	margin: auto;
 }
 /* END PARTNERS */
 /* ABOUT */ 
 .about-text{
 	color:white;
-	background: url("../images/about.jpg");
+	background: linear-gradient(to right,rgba(36, 97, 91, 0.6),rgba(2, 36, 97, 0.6)),url("../images/about.png");
 	background-repeat: no-repeat;
 	min-height:600px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 600px;
+	background-size: cover;
+	background-position: center;
 }
 .subti{
 	color:white !important;
@@ -451,9 +498,11 @@ p{
 	bottom: 5%;
 	left:5%;
 }
-#bses{
-	bottom: -20%;
+#spt{
+	bottom: 0%;
 	left:45%;
+	height: 56px;
+	width: 150px;
 }
 #tyco{
 	bottom: -8%;
@@ -593,9 +642,11 @@ label{
 .text-end{
 	color:rgb(136, 132, 132);
 	font-size:13px;
+	position: relative;
 }
 .left-end{
 	margin-left:90px !important;
+	width: 100% !important;
 }
 .contact-us{
 	margin-top: 0;
@@ -755,6 +806,13 @@ footer .row{
 nav ul a{
 	font-size:17px !important;
 }
+#support h2{
+	text-align: center;
+}
+#support .flex-centered{
+	display: flex;
+	justify-content: center;
+}
 @media only screen and (min-width: 1025px){
 	#normal{
 		display: block !important;
@@ -811,6 +869,18 @@ nav ul a{
 	.logos-news{
 		width: 200px;
 	}
+	#flir{
+		left: 7%;
+	}
+	#cdvi{
+		left: 29%;
+	}
+	#inter{
+		left:77%;
+	}
+	#dsc{
+		left: 30%;
+	}
 	#canasa{
 		left:22%;
 		width:250px !important;
@@ -820,7 +890,7 @@ nav ul a{
 		width: 130px !important;
 	}
 	.logos{
-		width: 12%;
+		width: 12% !important;
 	}
 	.phone{
 		left:8% !important;
@@ -833,8 +903,10 @@ nav ul a{
 	#ssn{
 		left:15%;
 	}
-	#bses{
+	#spt{
 		left:45%;
+		height: 56px;
+		width: 150px;
 	}
 	#tyco{
 		left: 75%;
@@ -863,8 +935,8 @@ nav ul a{
 		margin-left: 45.5% !important;
 	}
 	.div-recommend{
-	margin-left: 47% !important;
-}
+		margin-left: 47% !important;
+	}
 	#supp-img{
 		width: 95%;
 	}
@@ -886,10 +958,16 @@ nav ul a{
 		top: 6%;
 	}
 	.recommend{
-		top: 73%;
+		top: 77%;
+	}
+	.row-text-partn1{
+		margin-top: 0px;
 	}
 }
-@media only screen and (max-device-width: 1080px) and (max-width: 1080px){
+@media only screen and (max-device-width: 1080px){
+	.row-text-partn1{
+		margin-top: 0px;
+	}
 	#small{
 		display:block !important;
 	}
@@ -1068,8 +1146,10 @@ nav ul a{
 	#ssn{
 		left:5%;
 	}
-	#bses{
+	#spt{
 		left:39%;
+		height: 56px;
+		width: 150px;
 	}
 	#tyco{
 		left: 71%;
@@ -1156,7 +1236,7 @@ nav ul a{
 		margin-left: 20px !important;
 	}
 	.text-2-part{
-		margin-top:80px !important;
+		margin-top:20px !important;
 	}
 	.text-re h4{
 		font-size: 2.92rem;
@@ -1181,14 +1261,79 @@ nav ul a{
 		padding-right: 20px;
 		top: 68% !important;
 	}
-	.partners{
-		background: url("../images/partners.jpg");
-		background-repeat: no-repeat;
-		min-height:500px !important;
-		margin-bottom: 0 !important;
-		background-size: cover;
-		position: relative;
-		background-position: center;
+	.menu-item{
+		width: 100% !important;
+		text-align: center;
+		height: 15%; !important;
+		background-color: white;
+	}
+	.menu-item a{
+		padding-top: 15px !important;
+		font-size: 40px !important;
+		width: 100% !important;
+	}
+	.sub-menu{
+		left: -700px !important;
+		width: 850px !important;
+		top: 80px !important;
+		height: 500px;
+	}
+	.flir-ther{
+		top: 15% !important; 
+	}
+	.logos{
+		width: 16% !important;
+	}
+	.end-rows{
+		width: 100% !important;
+	}
+	.mobile-end{
+		display: block !important;
+	}
+	.pc-end{
+		display:none;
+	}
+	.end-rows{
+		margin:0 !important;
+	}
+	.text-cont{
+		font-size: 35px !important;
+	}
+	.text-end{
+		font-size: 35px !important;
+	}
+	.end-rows div div h5{
+		font-size: 45px !important;
+
+	}
+	#white-logo{
+		max-width: 200px;
+		display: block;
+		margin:auto !important;
 	}
 
+	.text-menu-end div{
+		text-align: center;
+	}
+	.contact-us{
+		text-align: center;
+	}
+	.logo-div-end{
+		margin-left:0 !important;
+	}
+	.div-white-logo{
+		margin-left:0 !important;
+	}
+	.img-cont{
+		width: 40px;
+		margin-right: 50px;
+	}
+	.logos-link-ubic{
+		width: 800px;
+		height: 90px;
+		left: 10%;
+	}
+	.div-partn{
+		display: none !important;
+	}
 }

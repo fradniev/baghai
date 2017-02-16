@@ -85,9 +85,9 @@
 					<div id="divider" class="divider-services center-align"></div>
 				</div>
 			</div>
-			<p class="text-serv">Whether you are a Homeowner, Government, Contractor, Institution, 
+			<p class="text-serv">Whether you are a Homeowner, Government Contractor, Institution, 
 			or Business, we can customize a security surveillance system 
-			to fit your needs at a prices that works for you.</p>
+			to fit your needs at a price that works for you.</p>
 		</div>
 	</div>
 
@@ -109,7 +109,7 @@
 		<div class="center-align valign-wrapper interactive text-serv serv div-img img-serv" >
 			<img src="<?php echo get_template_directory_uri() . '/images/interactive.jpg'; ?>">
 			<p>
-				Interactrive Apps and <br>
+				Interactrive Apps, <br>
 				Remote Control <br>
 				and Automation
 			</p>
@@ -156,7 +156,12 @@
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
 		<div class="aerial valign-wrapper center-align text-serv div-img-large img-serv">
-			
+			<a class="logos-link" target="_blank" href="http://www.flir.ca/home/"> 
+				<img id="flir" class="logos flir-ther" src="<?php echo get_template_directory_uri() . '/images/logos partnes/flir.png'; ?>">
+			</a>
+			<p class="text-logo-flir">
+				Baghai Digital uses FLIR exclusively for thermal imaging products
+			</p>
 			<p>
 				Aerial Surveillance and Thermal Imaging
 			</p>
@@ -170,7 +175,7 @@
 				&ldquo;
 			</p>
 			<h4 style="text-align: right !important;">- Jim Pratt</h4>
-			<p class="text-aerial2-2 text-re" style="text-align: right !important; margin: auto;">Director, Distribution Sales, Northern Region</p>
+			<p class="text-aerial2-2 text-re" style="text-align: right !important; margin: auto;">Director, FLIR Distribution Sales, Northern Region</p>
 		</div>
 	</div>
 	<!-- END SERVICES -->
@@ -196,27 +201,26 @@
 			</div>
 		</div>
 		<div class="row recommend">
-			<div class="div-recommend">
+			<!--<div class="div-recommend">
 				<div id="divider" class="divider-recommend center-align"></div>
-			</div>
-			<div class="col s12 center-align">
+			</div>-->
+			<div class="col s12 center-align row-text-partn1">
 				<div class="text-re">
-					<p>&ldquo;Honeywell Security and Fire is proud to have Baghai Digital as an installer of Honeywell Security
+					<p class="re-message">&ldquo;Honeywell Security and Fire is proud to have Baghai Digital as an installer of Honeywell Security
 					
 					Products. Baghai is a long standing supplier of quality products and workmanship in the security
 					
 					industry delivering superior customer service. I would highly recommend Baghai for any of your security needs.&rdquo;</p>
-					<h4 style="text-align: right !important;">- Steve Ricker</h4>
-					<p style="text-align: right !important; margin: auto;">Honeywell Security and Fire District Manager</p>
+					<h4 class="re-customer">- Steve Ricker</h4>
+					<p class="re-customer-title">Honeywell Security and Fire District Manager</p>
 				</div>
 			</div>
-			<br>
-			<div class="col s12 center-align">
+			<div class="col s12 center-align row-text-partn2">
 				<div class="text-re text-2-part">
-					<p>&ldquo;
+					<p class="re-message">&ldquo;
 					Baghai Digital has been installing Speco Technologies’ security products for over a decade, and we are thrilled to call them a partner.  They know our products inside and out and we have no hesitation to recommend them for any security job.
 					&rdquo;</p>
-					<h4 style="text-align: right !important;">- Scott Pisani</h4>
+					<h4 class="re-customer">- Scott Pisani</h4>
 				</div>
 			</div>
 		</div>
@@ -248,7 +252,7 @@
 			</div>
 			<div style="height: 100px; position: relative">
 				<a class="logos-link" target="_blank" href=" http://www.securitysystemsnews.com/article/20-under-40-class-2008"><img id="ssn" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/logo.png'; ?>"></a>
-				<a class="logos-link" target="_blank" href="#"><img id="bses" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/canasa.png'; ?>"></a>
+				<a class="logos-link" target="_blank" href="http://www.sptnews.ca/News/Sean-Baghai-determined-to-build-a-better-security-robot.html?print=1&tmpl=component"><img id="spt" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/spt-logo-news.png'; ?>"></a>
 				<a class="logos-link" target="_blank" href="https://www.tycosecurityproducts.com/RSCS_Avondale.aspx"><img id="tyco" class="logos-news" src="<?php echo get_template_directory_uri() . '/images/logos partnes/tyco.png'; ?>"></a>
 			</div>
 		</div>
@@ -258,10 +262,13 @@
 	<div id="support" class="row support-text left-align valign-wrapper">
 		<div class="col offset-s1 s6 text-supp-div">
 			<h2><b>SUPPORT</b></h2>
-			<div class="row">
-				<div class="col s2 div-supp">
+			<!-- <div class="row">
+				<div class="col offset-s5 s2 div-supp">
 					<div id="divider" class="divider-support left-align"></div>
 				</div>
+			</div> -->
+			<div class="flex-centered">
+				<div id="divider" class="divider-support"></div>
 			</div>
 			<p class="text-supp">
 				With over 6200 systems installed in the past 30 years we have the experience to assist you with quick professional technical support, remote diagnostics, and on site support if required. We are only as good as our customer service, and provide professional customer service and support to resolve any issues if they arise.
@@ -348,7 +355,7 @@
 	</div>	
 	<!-- END CONTACT -->
 	<!-- END -->
-	<div class="row end-text left-align">
+	<div class="row end-text left-align pc-end">
 		<div class="col s4 end-rows">
 			<div class="row">
 				<div class="col s12 left-end">
@@ -414,10 +421,12 @@
 			<div class="row">
 				<div class="col s12 text-end left-align">
 					<div class="valign-wrapper">
-						<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/location.png'; ?>"> 
-						<p class="text-cont"> 
-							19 Avondale Ave, North York ON M2N 0A6<br>Toronto, Ontario. 
-						</p>
+						<a class="logos-link-ubic" target="_blank" href="https://www.google.com/maps/place/BAGHAI+DIGITAL+A+div.+of+Baghai+Security+%26+Electronic+Surveillance+Inc./@43.7581109,-79.4090893,17z/data=!4m12!1m6!3m5!1s0x882b34aa53592bbb:0xab8c0a2be0e37118!2sBAGHAI+DIGITAL+A+div.+of+Baghai+Security+%26+Electronic+Surveillance+Inc.!8m2!3d43.7581109!4d-79.4090893!3m4!1s0x882b34aa53592bbb:0xab8c0a2be0e37118!8m2!3d43.7581109!4d-79.4090893" >
+						</a>
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/location.png'; ?>"> 
+							<p class="text-cont"> 
+								19 Avondale Ave, North York ON M2N 0A6<br>Toronto, Ontario. 
+							</p>
 					</div>
 				</div>
 			</div>
@@ -432,9 +441,92 @@
 				</div>
 			</div>
 		</div>
-	
+	</div>
 	<!-- END -->
+	<!-- mobile end -->
+	<div class="row end-text left-align mobile-end" style="display: none">
+		<div class="col s4 left-align end-rows">
+			<div class="row">
+				<div class="col s12 left-align" >
+					<h5 class="contact-us"><b>CONTACT US</b></h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 text-end left-align">
+					<div class="valign-wrapper">
+						<a class="logos-link-ubic" target="_blank" href="https://www.google.com/maps/place/BAGHAI+DIGITAL+A+div.+of+Baghai+Security+%26+Electronic+Surveillance+Inc./@43.7581109,-79.4090893,17z/data=!4m12!1m6!3m5!1s0x882b34aa53592bbb:0xab8c0a2be0e37118!2sBAGHAI+DIGITAL+A+div.+of+Baghai+Security+%26+Electronic+Surveillance+Inc.!8m2!3d43.7581109!4d-79.4090893!3m4!1s0x882b34aa53592bbb:0xab8c0a2be0e37118!8m2!3d43.7581109!4d-79.4090893" >
+						</a>
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/location.png'; ?>"> 
+							<p class="text-cont"> 
+								19 Avondale Ave, North York ON M2N 0A6<br>Toronto, Ontario. 
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 text-end left-align">
+					<div class="valign-wrapper">
+							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">
+						<p class="text-cont">
+							(416) 449-5992
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col s4 left-align end-rows">
+			<div class="row">
+				<div class="col s12" >
+					<h5 class="contact-us" style="margin-top: 0 !important;"><b>MENU</b></h5>
+				</div>
+			</div>
+			<div class="row left-align-align">
+				<div class="col s12">
+					<div class="row">
+						<div class="col s6">
+							<div class="row text-end text-menu-end">
+								<div class="col s12 home-a homeend-a">
+									Home
+								</div>
+								<div class="col s12 com-a comend-a">
+									Commercial
+								</div>
+								<div class="col s12 res-a resend-a">
+									Residential
+								</div>
+							</div>
+						</div>
+						<div class="col s6">
+							<div class="row text-end text-menu-end">
+								<div class="col s12 about-a aboutend-a">
+									About
+								</div>
+								<div class="col s12 support-a supportend-a">
+									Support
+								</div>
+								<div class="col s12 contact-a contactend-a">
+									Contact us
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 end-rows">
+			<div class="row">
+				<div class="col s12 left-end logo-div-end">
+					<img id="white-logo" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" >
+				</div>
+			</div>
+			<!--<div class="row">
+				<div class="col s12 left-end text-end">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor justo et <br> dignissim euismod. Nulla molestie massa eget tellus commodo, eget volutpat sem pulvinar.</p>
+				</div>
+			</div>-->
+		</div>
 
-</div>
+	</div>
+	<!-- mobile end -->
 
 <?php get_footer(); ?>
