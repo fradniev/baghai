@@ -222,6 +222,7 @@
 					Baghai Digital has been installing Speco Technologies’ security products for over a decade, and we are thrilled to call them a partner.  They know our products inside and out and we have no hesitation to recommend them for any security job.
 					&rdquo;</p>
 					<h4 class="re-customer">- Scott Pisani</h4>
+					<p class="re-customer-title">Speco Technologies Director of Sales - Canada</p>
 				</div>
 			</div>
 		</div>
@@ -275,7 +276,8 @@
 				With over 6200 systems installed in the past 30 years we have the experience to assist you with quick professional technical support, remote diagnostics, and on site support if required. We are only as good as our customer service, and provide professional customer service and support to resolve any issues if they arise.
 				<br>
 				When you call us, you always talk to one of our team members, not an automated machine. Without any runaround your profile, history and any issues are immediately identified and rectified.  We know you are busy and have taken the time and effort to call us, we want you happy.
-			<p class="text-supp">For more information and support, contact us at (416) 449-5992</p>
+			<p class="text-supp">For more information and support, contact us at (416) 449-5992 or <a style="text-decoration: underline;" href="mailto:sean@baghaidigital.net">email us</a>.</p>
+			
 		</div>
 		<div class="col s4 supp-img-div valign-wrapper" style="margin-left: 50px;">
 			<img  id="supp-img" src="<?php echo get_template_directory_uri() . '/images/support.png'; ?>">
@@ -319,7 +321,7 @@
 	<div id="contact" class="row contact-text center-align valign-wrapper">
 		<div class="col s12">
 			<h2>CONTACT US</h2>
-			<form method="post" action="">
+			<form id="form" method="post" action="">
 				<div class="row">
 					<div class="col offset-s6 s2 div-con">
 						<div id="divider" class="divider-contact center-align"></div>
@@ -434,7 +436,9 @@
 			<div class="row">
 				<div class="col s12 text-end left-align">
 					<div class="valign-wrapper">
-							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">
+						<a class="logos-link-ubic" href="tel:4164495992">
+						</a>
+						<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">
 						<p class="text-cont">
 							(416) 449-5992
 						</p>
@@ -467,10 +471,12 @@
 			<div class="row">
 				<div class="col s12 text-end left-align">
 					<div class="valign-wrapper">
+						<a class="logos-link-ubic" href="tel:4164495992">
+						</a>
 							<img class="img-cont" src="<?php echo get_template_directory_uri() . '/images/logos partnes/cel.png'; ?>">
-						<p class="text-cont">
-							(416) 449-5992
-						</p>
+							<p class="text-cont">
+								(416) 449-5992
+							</p>
 					</div>
 				</div>
 			</div>
@@ -529,5 +535,13 @@
 
 	</div>
 	<!-- mobile end -->
-
+<div id="modal1" class="modal">
+    <div class="modal-content thx">
+      <h4>Thank you for contacting us!</h4>
+      <h4>We will get back to you shortly.</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="thx-button modal-action modal-close waves-effect waves-green btn-flat">Continue</a>
+    </div>
+</div>
 <?php get_footer(); ?>

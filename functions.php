@@ -31,6 +31,14 @@
 			$subject=$email.' - '.$name;
 			$message=$_POST['message'];
 			wp_mail($email_to,$subject, $message);
+			echo "<script>
+         $(window).load(function(){
+         	$(document).ready(function(){
+			    $('.modal').modal();
+             	$('#modal1').modal('open');
+			  });
+         });
+    </script>";
 		}
 	}
 	add_action('init', 'send_email')

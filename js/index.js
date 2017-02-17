@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
     $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.modal').modal();
     //window.setInterval(function(){$('.carousel').carousel('next')},9500);
 // Hide Header on on scroll down
 var didScroll;
@@ -17,30 +18,16 @@ setInterval(function() {
         didScroll = false;
     }
 }, 250);
-
-/*function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.row-info').removeClass('nav-down').addClass('nav-up');
-        $('.navbar-fixed').addClass('nav-hide');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.row-info').removeClass('nav-up').addClass('nav-down');
-        	$('nav').removeClass('nav-hide');
-        }
-    }
-    
-    lastScrollTop = st;
-}*/
+function onModalHide(){
+	location.reload();
+}
+$('#modal1').modal({
+	complete:onModalHide
+});
+$("#form").bind('submit', function(e) {
+		e.preventDefault();
+        $('#modal1').modal('open');
+   });
 
 	function goToByScroll(id, offset){
      // Remove "link" from the ID

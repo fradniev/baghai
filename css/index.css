@@ -3,7 +3,7 @@
 	src: url(Humans/tt0290m_.ttf);
 	font-weight: bold;
 }
-*{
+body{
 	font-family: 'human';
 	font-weight: bold;
 }
@@ -217,7 +217,7 @@ p{
 	color:white;
 	background-color: darkblue;
 	background:linear-gradient(to right,rgb(54, 142, 133),rgb(5, 51, 134));
-	min-height:500px !important;
+	min-height:400px !important;
 	margin-bottom: 0 !important;
 }
 .text-serv{
@@ -487,7 +487,8 @@ p{
 	background-repeat: no-repeat;
 	min-height:500px !important;
 	margin-bottom: 0 !important;
-	background-size: 100% 700px;
+	background-size: cover;
+	background-position: center;
 	position: relative;
 }
 .all-news{
@@ -577,6 +578,25 @@ p{
 	min-height:800px !important;
 	margin-bottom: 0 !important;
 	background-size: 100% 800px;
+}
+.thx{
+	font-family: Sans-Serif !important;
+	text-align: center;
+	margin-top: 90px;
+	color:rgb(136, 132, 132);
+}
+.thx-button{
+	margin:auto !important;
+	display: block !important;
+	width: 20%;
+	text-align: center;
+	float:none !important;
+	background:linear-gradient(to right,rgba(56, 169, 158, 0.9),rgba(20, 115, 171, 0.9));
+	color:white !important;
+	margin-top: 25px !important;
+}
+#modal1{
+	height: 400px;
 }
 .divider-contact{
 	background: white !important;
@@ -1348,5 +1368,18 @@ nav ul a{
 		width: 25% !important;
 		bottom: -62%;
 		left: 36%;
+	}
+	#modal1{
+		margin-top: 350px !important;
+	}
+	.thx{
+		font-size: 45px !important;
+
+	}
+	.thx-button{
+		font-size: 25px;
+		width: 30%;
+		height: 48px !important;
+		line-height: 46px !important;
 	}
 }
