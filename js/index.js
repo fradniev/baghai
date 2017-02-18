@@ -48,7 +48,7 @@ $("#form").bind('submit', function(e) {
 	});
 	$(".com-a").click(function(e){
 		e.preventDefault();
-		goToByScroll('rescom', 220);
+		goToByScroll('rescom', 125);
 	});
 	$(".about-a").click(function(e){
 		e.preventDefault();
