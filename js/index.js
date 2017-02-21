@@ -12,21 +12,30 @@ $(window).scroll(function(event){
     didScroll = true;
 });
 
-setInterval(function() {
+/*setInterval(function() {
     if (didScroll) {
         hasScrolled();
         didScroll = false;
     }
-}, 250);
+}, 250);*/
 function onModalHide(){
+	$('#name').val("");
+	$('#email').val("");
+	$('#message').val("");
 	location.reload();
 }
 $('#modal1').modal({
 	complete:onModalHide
 });
+
 $("#form").bind('submit', function(e) {
 		e.preventDefault();
-        $('#modal1').modal('open');
+        jQuery.post(
+        	MyAjax.url, 
+        	{action : 'send_email' ,name : $('#name').val(), email : $('#email').val(), message : $('#message').val() }, 
+        	function(response) {
+				$('#modal1').modal('open');
+           });
    });
 
 	function goToByScroll(id, offset){

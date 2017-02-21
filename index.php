@@ -181,9 +181,9 @@
 	<!-- END SERVICES -->
 	<!-- PARTNERS -->
 	<div class="row grid partners center-align valign-wrapper">
-		<div class="valign-wrapper div-img-large div-partn">
+		<!--<div class="valign-wrapper div-img-large div-partn">
 			<img  src="<?php echo get_template_directory_uri() . '/images/partners.jpg'; ?>">
-		</div>
+		</div>-->
 		<div class="col s12 part-log-tittle">
 			<h2><b>OUR TRUSTED PARTNERS</b></h2>
 			<div class="row">
@@ -321,7 +321,7 @@
 	<div id="contact" class="row contact-text center-align valign-wrapper">
 		<div class="col s12">
 			<h2>CONTACT US</h2>
-			<form id="form" method="post" action="">
+			<form id="form" class="form" method="post" action="">
 				<div class="row">
 					<div class="col offset-s6 s2 div-con">
 						<div id="divider" class="divider-contact center-align"></div>

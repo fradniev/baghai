@@ -374,7 +374,7 @@ p{
 .partners{
 	background: url("../images/partners.jpg");
 	background-repeat: no-repeat;
-	min-height:1500px !important;
+	min-height:800px !important;
 	margin-bottom: 0 !important;
 	background-size: cover;
 	position: relative;
@@ -425,7 +425,7 @@ p{
 	margin: 20px 0;
 }
 .part-log-tittle{
-	top: 15%;
+	top: 2%;
 	position: absolute;
 	left: 0 !important;
 }
@@ -610,10 +610,10 @@ p{
   width:80%;
   margin-left: auto ;
   margin-right: auto ;
-  min-height:450px;
+  min-height:470px;
 }
 .name-email{
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .name-email-row{
 	margin-bottom: 0px !important;
@@ -983,10 +983,10 @@ nav ul a{
 		left: 55%;
 	}
 	.part-log-tittle{
-		top: 6%;
+		top: 2%;
 	}
 	.recommend{
-		top: 77%;
+		top: 72%;
 	}
 	.row-text-partn1{
 		margin-top: 0px;

@@ -10,10 +10,11 @@
 		wp_enqueue_script( "baghai-jqs", get_template_directory_uri().'/js/jquery-3.1.1.min.js', array(), '', false );
 		wp_enqueue_script( "baghai-materializejs", get_template_directory_uri().'/css/materialize/js/materialize.js', array(), '', false );
 		wp_enqueue_script( "baghai-materializejsmin", get_template_directory_uri().'/css/materialize/js/materialize.min.js', array(), '', false );
-		wp_enqueue_script( "baghai-js", get_template_directory_uri().'/js/index.js', array(), '', true );
+		wp_enqueue_script( "baghai-js", get_template_directory_uri().'/js/index.js', array(), '', false );
+		wp_localize_script( 'baghai-js', 'MyAjax', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
 	}
 	add_action("wp_enqueue_scripts", "baghai_script_enqueue");	
-
+	add_action('wp_ajax_send_email', 'send_email');
 	function register_my_menus(){
 		register_nav_menus(
 			array(
@@ -24,22 +25,23 @@
 	}
 	add_action('init', 'register_my_menus');
 	function send_email(){
-		if(isset($_POST['name'] )){
-			$email=$_POST['email'];
-			$email_to="xerdrein@gmail.com";
-			$name=$_POST['name'];
-			$subject=$email.' - '.$name;
-			$message=$_POST['message'];
-			wp_mail($email_to,$subject, $message);
-			echo "<script>
-         $(window).load(function(){
-         	$(document).ready(function(){
-			    $('.modal').modal();
-             	$('#modal1').modal('open');
-			  });
-         });
-    </script>";
-		}
+	    if(isset($_POST['name'] )){
+	        $email    = $_POST['email'];
+	        $email_to = "sean@baghaidigital.net";
+	        $name     = $_POST['name'];
+	        $subject  = "Contact: {$name}";
+	        $message  = $_POST['message'];
+
+	        $headers = [
+	            "From: Web Consult <{$email_to}>",
+	            "Reply-To: {$email}"
+	        ];
+	        wp_mail($email_to,$subject, $message, $headers);
+	        $_POST['name']=null;
+	        $_POST['email']=null;
+	        $_POST['message']=null;
+	        echo "true";
+	    }
 	}
 	add_action('init', 'send_email')
 ?>
