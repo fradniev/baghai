@@ -24,7 +24,7 @@
 					<div col="col s5" id="normal" style="display:none;">
 						<?php 
 							wp_nav_menu(array(
-								'theme_location'=>'header-menu',
+								'theme_location'=>'other',
 								'menu_class'=>'right marg',
 								
 								));
@@ -33,7 +33,7 @@
 					<div col="col s7 valign-wrapper" id="small" style="display:none;">
 						<?php 
 							wp_nav_menu(array(
-								'theme_location'=>'small',
+								'theme_location'=>'other-2',
 								'menu_class'=>'right marg',
 								'container_class'=>'menu-header'
 								));

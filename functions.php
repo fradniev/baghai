@@ -20,7 +20,8 @@
 			array(
 				'header-menu'=> __('Header Menu'),
 				'small'=> __('Small'),
-
+				'other'=>__('Other'),
+				'other-2'=>__('Other-2'),
 				));
 	}
 	add_action('init', 'register_my_menus');

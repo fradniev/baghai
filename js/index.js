@@ -11,7 +11,10 @@ var navbarHeight = $('.row-info').outerHeight();
 $(window).scroll(function(event){
     didScroll = true;
 });
-
+$(document).on("click",'.div-p',function() {
+	$(this).children(".box-text").children("div").children(".this-p").toggleClass("up");
+	$(this).children(".box-text").children("div").children(".this-p-hid").toggleClass("show");
+  });
 /*setInterval(function() {
     if (didScroll) {
         hasScrolled();
@@ -22,21 +25,42 @@ function onModalHide(){
 	$('#name').val("");
 	$('#email').val("");
 	$('#message').val("");
-	location.reload();
 }
 $('#modal1').modal({
 	complete:onModalHide
 });
 
-$("#form").bind('submit', function(e) {
-		e.preventDefault();
-        jQuery.post(
-        	MyAjax.url, 
-        	{action : 'send_email' ,name : $('#name').val(), email : $('#email').val(), message : $('#message').val() }, 
-        	function(response) {
-				$('#modal1').modal('open');
-           });
-   });
+$("#form").on("submit", function(ev){
+	ev.preventDefault();
+
+	var http = $.ajax({
+		method: "POST",
+		data: getFormData("form")
+	});
+
+	http.always(function(){
+		$("#modal1").modal("open");
+	});
+});
+
+function getFormData(name){
+	var form = $(document.forms[name]);
+
+	var inputs = form.find("input");
+	var textAreas = form.find("textarea");
+
+	var data = {};
+
+	inputs.each(function(){
+		data[this.name] = this.value;
+	});
+
+	textAreas.each(function(){
+		data[this.name] = this.value;
+	});
+
+	return data;
+}
 
 	function goToByScroll(id, offset){
      // Remove "link" from the ID

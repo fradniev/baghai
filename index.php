@@ -1,8 +1,12 @@
+<?php 
+/*
+Template Name: Baghai Index
+ */
+ ?>
 <?php get_header(); ?>
 <div class="container" id="home">
 	<div class="carousel-test">
 		<div class="div-img-large gradient">
-			
 			<img  src="<?php echo get_template_directory_uri() . '/images/carousel-inic.jpg'; ?>">
 		</div>
 		<div class="row carousel-text center-align" style="top:50%;">
@@ -51,7 +55,7 @@
 	<div id="rescom" class="content-residencial-commercial">
 		<div class="row">
 			<div class="res-com">
-				<div class="col s12 m5 l3" id="res-image">
+				<a href="residential"><div class="col s12 m5 l3" id="res-image">
 					<div class="residential">
 						<h1 class="h-res-com" style="font-size:5rem"><b>01.</b></h1>
 						<h3 class="h-res-com"><b>Residential</b></h3>
@@ -59,10 +63,10 @@
 						<p class="text-com-res">
 							Since 1987, we have installed thousands of professionally installed  systems in the GTA  Our attrition rate is far less than the industry average due to the attention to detail and ensuring we test and verify our systems at every level, and on a continuous basis.  Keeping our customer’s databases updated and staying in touch with status updates helps us ensure that we are protecting their home efficiently and effectively.
 						</p>
-						<!--<p class="learn-res learn">Learn more</p>-->
+						<p class="learn-res learn">Learn more</p>
 					</div>
-				</div>
-				<div class="col s12 m5 l3" id="com-image">
+				</div></a>
+				<a href="commercial"><div class="col s12 m5 l3" id="com-image">
 					<div class="commercial">
 						<h1 class="h-res-com" style="font-size:5rem"><b>02.</b></h1>
 						<h3 class="h-res-com"><b>Commercial</b></h3>
@@ -70,9 +74,9 @@
 						<p class="text-com-res">
 							Situational Awareness - Our customers know the security  status of their business in real time.   From Building Lockdown to remote surveillance and a complete and continuous audit trail reporting, you can keep greater tabs on your business even when your not there. 
 						</p>
-						<!--<p class="learn-com learn">Learn more</p>-->
+						<p class="learn-com learn">Learn more</p>
 					</div>
-				</div>
+				</div></a>
 			</div>
 		</div>
 	</div>
@@ -92,79 +96,149 @@
 	</div>
 
 	<div class="grid services-grid" style="margin-bottom: 0 !important;">
-		<div class="burglar valign-wrapper text-serv serv div-img img-serv" >
+		<div class="div-p valign-wrapper text-serv serv div-img img-serv" >
 			<img src="<?php echo get_template_directory_uri() . '/images/burglar-system.jpg'; ?>">
-			<p class="center-align">
-				Burglar <br>
-				alarm systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Burglar <br>
+						Alarm Systems
+					</p>
+					<p class="this-p-hid">
+						Our systems are professionally installed and programmed.  We take care of all the details and provide you with a simple demonstration to get you up and running.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper network text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper network text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/network.jpg'; ?>">
-			<p>
-				Network Video <br>
-				Recorder Camera Systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Network Video <br>
+						Recorder Camera Systems
+					</p>
+					<p class="this-p-hid">
+						We offer the latest digital IP cameras specifically tailored for your application. The cameras are professionally installed and set up. Using your smartphone you have instant access for live and playbacks. We also offer military grade video analytics with broadcast quality IP camera technology.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper interactive text-serv serv div-img img-serv" >
+		<div class="div-p center-align valign-wrapper interactive text-serv serv div-img img-serv" >
 			<img src="<?php echo get_template_directory_uri() . '/images/interactive.jpg'; ?>">
-			<p>
-				Interactrive Apps, <br>
-				Remote Control <br>
-				and Automation
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Interactive Apps, <br>
+						Remote Control <br>
+						and Automation
+					</p>
+					<p class="this-p-hid">
+						Through our apps and remote controls you may check the status of your home or business instantly with your smartphone, computer, or tablet. Some of our other feature include the ability to arm and disarm your system and receive text message or email alerts with any event you choose.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper counter text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper counter text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/counter.jpg'; ?>">
-			<p class="center-align">
-				Counter Surveillance
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Counter Surveillance
+					</p>
+					<p class="this-p-hid">
+						Our combined experience and expertise allow us to provide a thorough approach that is tailored to the individuals concerns. Our services include searching for bugs, weather active or dormant, and we go through verification sequencing to confirm that the bugs that are remotely activated. We run actual telephone landline or phone system from the Carbon Block to the Bix Block systems .
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper access text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper access text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/access.jpg'; ?>">
-			<p>
-				Access Control Systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Access Control Systems
+					</p>
+					<p class="this-p-hid">
+						Our access control systems are designed to make your commercial office and facilities more secure by providing state of the art key controls with a complete audit trail of any events.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper fire text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper fire text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/fire.jpg'; ?>">
-			<p>
-				Fire Alarm Monitoring
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Fire Alarm Monitoring
+					</p>
+					<p class="this-p-hid">
+						Fire Alarms are essential to keeping your property safe and thats why at Baghai Digital we focus on quality installation. We strategically place all of our fire detectors where they are needed the most in order to insure rapid recognition of hazardous situations. This leads to quicker response time by the fire departments, keeping your property as safe as possible.   
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="temperature valign-wrapper text-serv serv div-img img-serv">
+		<div class="div-p temperature valign-wrapper text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/temperature.jpg'; ?>">
-			<p class="center-align">
-				Low Temperature and <br>
-				Flood Environmental <br>
-				Monitoring Systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Low Temperature and <br>
+						Flood Environmental <br>
+						Monitoring Systems
+					</p>
+					<p class="this-p-hid">
+						Our Low Temperature Floor Environment system provides an automatic 24 hour signalling of a low temperature in your home or business which could save you from freezing pipes and floods.  Our flood detectors will automatically inform us the moment your sump pumps fail or the moment water is detected, mitigating losses and preventing damage.  We use a variety of high/low temperature sensors protecting everything from Freezers to Wine Cellars.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper intercom text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper intercom text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/intercom.jpg'; ?>">
-			<p>
-				Intercom Systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Intercom Systems
+					</p>
+					<p class="this-p-hid">
+						We offer wireless and hardwired intercom systems to provide solutions for your facilities and warehouses where two way voice is required.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="center-align valign-wrapper enterphone text-serv serv div-img img-serv">
+		<div class="div-p center-align valign-wrapper enterphone text-serv serv div-img img-serv">
 			<img src="<?php echo get_template_directory_uri() . '/images/enterphone.jpg'; ?>">
-			<p>
-				Enterphone Building <br>
-				Entry Systems
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Enterphone Building <br>
+						Entry Systems
+					</p>
+					<p class="this-p-hid">
+						 We offer the latest enterphone entry systems to your building or condo that will ring the residents phone to screen visitors without revealing any information about the resident's property.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
-		<div class="aerial valign-wrapper center-align text-serv div-img-large img-serv">
+		<div class="div-p aerial valign-wrapper center-align text-serv div-img-large img-serv">
 			<a class="logos-link" target="_blank" href="http://www.flir.ca/home/"> 
 				<img id="flir" class="logos flir-ther" src="<?php echo get_template_directory_uri() . '/images/logos partnes/flir.png'; ?>">
 			</a>
 			<p class="text-logo-flir">
 				Baghai Digital uses FLIR exclusively for thermal imaging products
 			</p>
-			<p>
-				Aerial Surveillance and Thermal Imaging
-			</p>
+			<div class="box-text">
+				<div class="box-text-rel">
+					<p class="this-p">
+						Aerial Surveillance and Thermal Imaging
+					</p>
+					<p class="this-p-hid">
+						Thermal surveillance is practically impossible to elude and have fewer falses than other means. Aerial Surveillance allows us to collect surveillance footing, intelligence and other data. Baghai Digital owns and operates a Cessna Skylane as our spy plane for all of our missions. We have access to a full line of infrared and thermal imaging products to get the job done.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
