@@ -1,6 +1,6 @@
 		<footer>
 			<div class="row valign-wrapper">
-				<div class="col s5" style="margin-left: 0 !important">
+				<div class="col s8" style="margin-left: 0 !important">
 					<div class="row">
 						<div class="col s12 footer">
 							<p>2016. Baghai Digital.All right reserved</p>

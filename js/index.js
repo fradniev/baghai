@@ -12,8 +12,8 @@ $(window).scroll(function(event){
     didScroll = true;
 });
 $(document).on("click",'.div-p',function() {
-	$(this).children(".box-text").children("div").children(".this-p").toggleClass("up");
-	$(this).children(".box-text").children("div").children(".this-p-hid").toggleClass("show");
+	$(this).parent().children(".box-text").toggleClass("up");
+	$(this).parent().children(".box-text").children("div").children(".this-p-hid").toggleClass("show");
   });
 /*setInterval(function() {
     if (didScroll) {

@@ -25,6 +25,11 @@
 				));
 	}
 	add_action('init', 'register_my_menus');
+	function custom_nav_class($classes, $item){
+        $classes[] = "valign-wrapper";
+        return $classes;
+	}
+	add_filter('nav_menu_css_class' , 'custom_nav_class' , 10 , 2);
 	function send_email(){
 	    if(isset($_POST['name'] )){
 	        $email    = $_POST['email'];

@@ -5,9 +5,8 @@ Template Name: Baghai Index
  ?>
 <?php get_header(); ?>
 <div class="container" id="home">
-	<div class="carousel-test">
+	<div class="carousel-test index-carousel">
 		<div class="div-img-large gradient">
-			<img  src="<?php echo get_template_directory_uri() . '/images/carousel-inic.jpg'; ?>">
 		</div>
 		<div class="row carousel-text center-align" style="top:50%;">
 			<div class="car">
@@ -18,9 +17,9 @@ Template Name: Baghai Index
 					<h1><b>AS SAFE AS POSSIBLE!</b></h1>
 					<p class="text">We understand the importance of keeping your property safe, <br>
 					whether it is your home or place of business</p>
-					<div class="row">
-						<div class="col offset-s6 s2">
-							<div id="divider" class="divider-services center-align"></div>
+					<div class="flex-container">
+						<div class="flex-row">
+							<div id="divider" class="flex-item divider-services center-align"></div>
 						</div>
 					</div>
 				</div>
@@ -84,9 +83,9 @@ Template Name: Baghai Index
 	<div class="row services-text center-align valign-wrapper" id="services">
 		<div class="col s12  ">
 			<h2><b>OUR SERVICES</b></h2>
-			<div class="row">
-				<div class="col offset-s6 s2">
-					<div id="divider" class="divider-services center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-services center-align"></div>
 				</div>
 			</div>
 			<p class="text-serv">Whether you are a Homeowner, Government Contractor, Institution, 
@@ -96,7 +95,8 @@ Template Name: Baghai Index
 	</div>
 
 	<div class="grid services-grid" style="margin-bottom: 0 !important;">
-		<div class="div-p valign-wrapper text-serv serv div-img img-serv" >
+		<div class="valign-wrapper text-serv serv div-img img-serv" >
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/burglar-system.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -110,7 +110,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper network text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper network text-serv serv div-img img-serv">
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/network.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -124,7 +125,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper interactive text-serv serv div-img img-serv" >
+		<div class="center-align valign-wrapper interactive text-serv serv div-img img-serv" >
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/interactive.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -139,7 +141,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper counter text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper counter text-serv serv div-img img-serv">
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/counter.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -152,7 +155,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper access text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper access text-serv serv div-img img-serv">
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/access.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -165,7 +169,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper fire text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper fire text-serv serv div-img img-serv">
+			<div class="div-p div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/fire.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -178,7 +183,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p temperature valign-wrapper text-serv serv div-img img-serv">
+		<div class="temperature valign-wrapper text-serv serv div-img img-serv">
+			<div class="div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/temperature.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -193,7 +199,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper intercom text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper intercom text-serv serv div-img img-serv">
+			<div class="div-p div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/intercom.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -206,7 +213,8 @@ Template Name: Baghai Index
 				</div>
 			</div>
 		</div>
-		<div class="div-p center-align valign-wrapper enterphone text-serv serv div-img img-serv">
+		<div class="center-align valign-wrapper enterphone text-serv serv div-img img-serv">
+			<div class="div-p div-p div-p-services"></div>
 			<img src="<?php echo get_template_directory_uri() . '/images/enterphone.jpg'; ?>">
 			<div class="box-text">
 				<div class="box-text-rel">
@@ -222,7 +230,10 @@ Template Name: Baghai Index
 		</div>
 	</div>
 	<div class="grid" style="margin-bottom: 0 !important;">
-		<div class="div-p aerial valign-wrapper center-align text-serv div-img-large img-serv">
+		<div class="aerial valign-wrapper center-align text-serv div-img-large img-serv">
+			<div class="div-p div-p-aerial">
+				
+			</div>
 			<a class="logos-link" target="_blank" href="http://www.flir.ca/home/"> 
 				<img id="flir" class="logos flir-ther" src="<?php echo get_template_directory_uri() . '/images/logos partnes/flir.png'; ?>">
 			</a>
@@ -260,9 +271,9 @@ Template Name: Baghai Index
 		</div>-->
 		<div class="col s12 part-log-tittle">
 			<h2><b>OUR TRUSTED PARTNERS</b></h2>
-			<div class="row">
-				<div class="col s2 div-parnters">
-					<div id="divider" class="divider-partners center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-partners center-align"></div>
 				</div>
 			</div>
 			<div style="height: 200px; position: relative;">
@@ -296,7 +307,7 @@ Template Name: Baghai Index
 					Baghai Digital has been installing Speco Technologies’ security products for over a decade, and we are thrilled to call them a partner.  They know our products inside and out and we have no hesitation to recommend them for any security job.
 					&rdquo;</p>
 					<h4 class="re-customer">- Scott Pisani</h4>
-					<p class="re-customer-title">Speco Technologies Director of Sales - Canada</p>
+					<p class="re-customer-title bottom-partner">Speco Technologies Director of Sales - Canada</p>
 				</div>
 			</div>
 		</div>
@@ -307,9 +318,9 @@ Template Name: Baghai Index
 		<div class="col s12">
 			<h2><b>ABOUT US</b></h2>
 			<p class="text subti">Customer satisfaction is our pride and drive</p>
-			<div class="row">
-				<div class="col offset-s6 s2 div-about">
-					<div id="divider" class="divider-about center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-about center-align"></div>
 				</div>
 			</div>
 			<p class="text-ab">Baghai Digital has been in business for 30 years and services clients throughout Southwestern Ontario. Our experienced and dedicated team will ensure that your needs are fulfilled and that you are satisfied with our services. To eliminate false alarms and ensure greater reliability, we use several algorithms, continuous monitoring polling functions and follow ups in order to ensure that our customers have a working system all the time.
@@ -321,9 +332,9 @@ Template Name: Baghai Index
 	<div class="row news center-align valign-wrapper" style="position: relative">
 		<div class="col s12 all-news ">
 			<h2><b>IN THE NEWS</b></h2>
-			<div class="row">
-				<div class="col offset-s6 s2 div-news">
-					<div id="divider" class="divider-news center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-news center-align"></div>
 				</div>
 			</div>
 			<div style="height: 100px; position: relative">
@@ -350,7 +361,7 @@ Template Name: Baghai Index
 				With over 6200 systems installed in the past 30 years we have the experience to assist you with quick professional technical support, remote diagnostics, and on site support if required. We are only as good as our customer service, and provide professional customer service and support to resolve any issues if they arise.
 				<br>
 				When you call us, you always talk to one of our team members, not an automated machine. Without any runaround your profile, history and any issues are immediately identified and rectified.  We know you are busy and have taken the time and effort to call us, we want you happy.
-			<p class="text-supp">For more information and support, contact us at (416) 449-5992 or <a style="text-decoration: underline;" href="mailto:sean@baghaidigital.net">email us</a>.</p>
+			<p class="text-supp">For more information and support, contact us at <a href="tel:4164495992">(416) 449-5992 </a> or <a style="text-decoration: underline;" href="mailto:sean@baghaidigital.net">email us</a>.</p>
 			
 		</div>
 		<div class="col s4 supp-img-div valign-wrapper" style="margin-left: 50px;">
@@ -369,11 +380,12 @@ Template Name: Baghai Index
 	<div class="row associations center-align valign-wrapper">
 		<div class="col s12  ">
 			<h2><b>PROFESIONAL ASSOCIATIONS</b></h2>
-			<div class="row">
-				<div class="col offset-s6 s2 div-assoc">
-					<div id="divider" class="divider-associations center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-associations center-align"></div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col s12">
 					<div style="height: 200px; position: relative; left:6%; width: 90%">
@@ -396,9 +408,9 @@ Template Name: Baghai Index
 		<div class="col s12">
 			<h2>CONTACT US</h2>
 			<form id="form" class="form" method="post" action="">
-				<div class="row">
-					<div class="col offset-s6 s2 div-con">
-						<div id="divider" class="divider-contact center-align"></div>
+				<div class="flex-container">
+					<div class="flex-row">
+						<div id="divider" class="flex-item divider-contact center-align"></div>
 					</div>
 				</div>
 				<div class="box">

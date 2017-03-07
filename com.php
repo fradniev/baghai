@@ -5,12 +5,11 @@ Template Name: Baghai Commercial
  ?>
 <?php get_header("other"); ?>
 <div class="container" id="home">
-	<div class="carousel-test">
+	<div class="carousel-test com-carousel">
 		<div class="div-img-large gradient">
 			
-			<img  src="<?php echo get_template_directory_uri() . '/images/commercial.jpg'; ?>">
 		</div>
-		<div class="row carousel-text center-align" style="top:50%;">
+		<div class="row carousel-text center-align">
 			<div class="car">
 				<div class="col s8 make-home-div" >
 					<h4 class="make-home" style=" background-color: darkblue; position: relative; background-size: 100px;">MAKE YOUR PROPERTY</h4>
@@ -19,9 +18,9 @@ Template Name: Baghai Commercial
 					<h1><b>AS SAFE AS POSSIBLE!</b></h1>
 					<p class="text">We understand the importance of keeping your property safe, <br>
 					whether it is your home or place of business</p>
-					<div class="row">
-						<div class="col offset-s6 s2">
-							<div id="divider" class="divider-services center-align"></div>
+					<div class="flex-container">
+						<div class="flex-row">
+							<div id="divider" class="flex-item divider-services center-align"></div>
 						</div>
 					</div>
 				</div>
@@ -57,9 +56,9 @@ Template Name: Baghai Commercial
 	<div id="residential-div" class="row residential-text center-align valign-wrapper">
 		<div class="col s12">
 			<h2 class="res-title"><b>COMMERCIAL</b></h2>
-			<div class="row">
-				<div class="col offset-s6 s2 div-residential">
-					<div id="divider" class="divider-residential center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-residential center-align"></div>
 				</div>
 			</div>
 			<p class="text-res res-text-inic">Whether you are trying to protect your office, warehouses, or any other commercial property we are here to help! Our packages are competitively priced and our team of technicians will ensure that the installations are done in a timely and proper fashion. Our customers’ satisfaction and customer service is our pride therefore you can count on us to listen to your concerns and answer any questions. Our systems feature the latest and most innovative technology. Check out the packages that we offer below and select the one that best suits your needs! 
@@ -77,12 +76,12 @@ Template Name: Baghai Commercial
 					</div>
 					<h3>$30.00</h3>
 					<p>per month</p>
-					<a href="mailto:sean@baghaidigital.net?subject=Residential - Basic  Monitoring Plan Inquiry"><button class="button-residential waves-effect waves-light btn">Order</button></a>
+					<a href="mailto:sean@baghaidigital.net?subject=Commercial - Basic  Monitoring Plan Inquiry"><button class="button-residential waves-effect waves-light btn">Order</button></a>
 				</div>
 				<div class="box-promo box-promo-2">
 					<div class="box-title promo-2">
 						<h5>GSM Cellular Plan</h5>
-						<p>including open/close reporting</p>
+						<p>Including open/close reporting</p>
 						<div class="row div-2">
 							<div class="div-residential-2">
 								<div id="divider" class="divider-residential-2 center-align"></div>
@@ -91,11 +90,11 @@ Template Name: Baghai Commercial
 					</div>
 					<h3>$40.00</h3>
 					<p>per month</p>
-					<a href="mailto:sean@baghaidigital.net?subject=Residential - GSM Cellular Plan"><button class="button-residential waves-effect waves-light btn">Order</button></a>
+					<a href="mailto:sean@baghaidigital.net?subject=Commercial - GSM Cellular Plan"><button class="button-residential waves-effect waves-light btn">Order</button></a>
 				</div>
 				<div class="box-promo">
 					<div class="box-title">
-						<h5>GSM Cellular Plan</h5>
+						<h5>Advance GSM Cellular Plan</h5>
 						<p>Including open/close reporting and Interactive Remote Apps, and technical support including on site labor</p>
 						<div class="row">
 							<div class=" div-residential-2">
@@ -105,7 +104,7 @@ Template Name: Baghai Commercial
 					</div>
 					<h3>$65.00</h3>
 					<p>per month</p>
-					<a href="mailto:sean@baghaidigital.net?subject=Residential - Advance GSM Cellular Plan"><button  class="button-residential waves-effect waves-light btn">Order</button></a>
+					<a href="mailto:sean@baghaidigital.net?subject=Commercial - Advance GSM Cellular Plan"><button  class="button-residential waves-effect waves-light btn">Order</button></a>
 				</div>
 			</div>
 			<p class="text-res small-final">
@@ -119,9 +118,9 @@ Template Name: Baghai Commercial
 		<div class="col s12">
 			<h2>CONTACT US</h2>
 			<form id="form" class="form" method="post" action="">
-				<div class="row">
-					<div class="col offset-s6 s2 div-con">
-						<div id="divider" class="divider-contact center-align"></div>
+				<div class="flex-container">
+					<div class="flex-row">
+						<div id="divider" class="flex-item divider-contact center-align"></div>
 					</div>
 				</div>
 				<div class="box">

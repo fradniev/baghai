@@ -29,8 +29,10 @@ body{
 	color:rgb(136, 132, 132);
 }
 .make-home{
-	width: 37% !important;
-	left: 57%;
+	padding-bottom: 5px; 
+	padding-top: 5px; 
+	width: 50% !important;
+	left: 50.5%;
 }
 #home{
 	height: 100%
@@ -133,8 +135,27 @@ p{
 	position: relative;
 	bottom: 50%;
 }
-.carousel-test{
-	margin-top:65px;
+.carousel-test > .div-img-large{
+	padding-top:65px; 
+	min-height: 100vh !important;
+}
+.index-carousel > .div-img-large{
+	background:url("../images/carousel-inic.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.com-carousel > .div-img-large{
+	background:url("../images/commercial-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.res-carousel > .div-img-large{
+	background:url("../images/residential-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .carousel.carousel-slider{
 	height: calc(100vh) !important;
@@ -144,6 +165,8 @@ p{
 	position: absolute;
 	color:white !important;
 	width: 100%;
+	top: 55%;
+	transform: translate(0,-50%);
 }
 .gradient:after{
 	background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) !important; 
@@ -217,9 +240,25 @@ p{
 }
 /* END COMMERCIAL AND RESIDENCIAL */
 /* SERVICES */
-.div-p{
+.div-p-aerial{
+	min-width: 100%; 
+	min-height: 100%; 
+	cursor:pointer; 
+	position: absolute;
+	z-index: 10;
+}
+.div-p-services{
+	min-width: 100%; 
+	min-height: 100%; 
+	cursor:pointer; 
+	position: absolute;
+	z-index: 10;
+}
+.box-text{
+	cursor: normal;
+}
+.grid > .div-p{
 	cursor:pointer;
-	
 }
 .services-text{
 	color:white;
@@ -236,7 +275,6 @@ p{
 	width: 80%
 }
 .divider-services{
-	left:-15%;
 	position: relative;
 }
 .img-serv{
@@ -251,25 +289,26 @@ p{
 	overflow: hidden;
 }
 .div-img img{
+	z-index: -1 !important;
 	height: 100%;
 	width: 100%;
 }
 .box-text p{
-	position: absolute;
 	left: 0;
 	right: 0;
 	text-align: center; 
-	top: 50%;
-	transform: translate(0,-50%);
-	margin: 0; 
+	margin-top: 10px; 
 }
 .box-text{
 	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	-webkit-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%); 
+	top: 100%;
+	left:0;
+	transform: translate(0, -60%);
+	-webkit-transform: translate(0, -60%);
+	-o-transform: translate(0, -60%); 
 	width: 100%;
+	height: 100%;
+	z-index: 6 !important;
 }
 .div-img-large{
 	position: relative;
@@ -313,6 +352,19 @@ p{
 	width: 100%;
 }
 .div-img-large p{
+	text-align: center; 
+}
+.text-aerial2-1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%); 
+	-webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+	text-align: center; 
+}
+.text-aerial2-2{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -350,26 +402,26 @@ p{
 	left: 10% !important;
 }
 .text-logo-flir{
+	position: absolute;
 	font-size: 20px !important;
+	left: 10%;
 	top: 25% !important;
 	text-align: left !important;
 	width: 80% !important;
-	margin:auto !important;
 }
-.this-p{
+.box-text{
 	transition:top 1s;
 }
 .up{
-	top:25% !important;
+	top:85% !important;
 }
 .show{
 	visibility: visible !important;
 	opacity: 1 !important;
-	top: 65% !important;
 }
 .box-text-rel{
 	position: relative; 
-	height: 300px; 
+	height: 100%; 
 	width: 100%;
 }
 .this-p-hid{
@@ -381,22 +433,71 @@ p{
 	transition: visibility 1s, opacity 0.5s linear, top 1s;
 	text-align: justify !important;
 }
-.interactive > .box-text > .box-text-rel > .up{
-	top: 20% !important;
+.network > .up{
+	top: 85% !important;
 }
-.temperature > .box-text > .box-text-rel > .up{
-	top: 10% !important;
+.counter > .up{
+	top: 85% !important;
+}
+.access > .up{
+	top: 90% !important;
+}
+.intercom > .up{
+	top: 90% !important;
+}
+.fire > .up{
+	top: 85% !important;
+}
+.interactive > .up{
+	top: 80% !important;
+}
+.temperature > .up{
+	top: 70% !important;
 }
 .aerial > .box-text > .box-text-rel > .this-p-hid{
 	width: 70%;
 	margin:auto;
 	text-align: center !important;
 }
-.aerial > .box-text > .box-text-rel > .up{
-	top: 35% !important;
+.aerial > .up{
+	top: 100% !important;
+}
+.div-services{
+	margin-left: 48% !important;
+}
+.divider-services{
+	background: white !important;
+}
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row {
+    width: auto;
+}
+.flex-item {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
 }
 /* END SERVICES */
 /* PARTNERS */
+.bottom-partner{
+	margin-bottom: 60px !important;
+}
 .re-message{
 	margin-top: 0 !important;
 	margin-bottom:0 !important;
@@ -428,7 +529,7 @@ p{
 .partners{
 	background: url("../images/partners.jpg");
 	background-repeat: no-repeat;
-	min-height:800px !important;
+	min-height:880px !important;
 	margin-bottom: 0 !important;
 	background-size: cover;
 	position: relative;
@@ -555,7 +656,7 @@ p{
 }
 #ssn{
 	bottom: 5%;
-	left:5%;
+	left:15%;
 }
 #spt{
 	bottom: 0%;
@@ -616,11 +717,11 @@ p{
 }
 #canasa{
 	margin-top: 22.5px;
-	left:30%;
+	left:25%;
 	width: 300px !important;
 }
 #canada{
-	left:55%;
+	left:60%;
 	width: 180px !important;
 }
 /* END ASSOCIATIONS */
@@ -654,6 +755,7 @@ p{
 }
 .divider-contact{
 	background: white !important;
+	margin-bottom:40px !important;
 }
 .div-con{
 	margin-left: 48% !important;
@@ -820,21 +922,24 @@ label{
 	background: white !important;
 }
 .div-residential-2{
-	margin-left: 38% !important;
+	margin-left: 35% !important;
 }
 .div-residential{
-	margin-left: 48% !important;
+	margin-left: 47% !important;
 }
 .button-residential{
 	background-color: #01008a !important;
 }
 .box-title{
-	height: 180px; 
+	height: 205px; 
 	overflow: auto;
 }
 .small-final{
 	margin-bottom: 60px;
 	margin-top: 10px;
+}
+.res-title{
+	margin-top: 60px;
 }
 /* END RESIDENTIAL*/
 ::-webkit-input-placeholder {
@@ -878,7 +983,6 @@ footer{
 	color: rgb(136, 132, 132);
 	width: 100%;
 	font-size: 12px;
-	max-height: 75px;
 }
 footer .row{
 	margin-bottom: 0px !important;
@@ -991,7 +1095,21 @@ nav ul a{
 		padding-left: 5px;
 	}
 }
+@media only screen and (max-width: 1440px){
+	.this-p{
+		font-size: 20px !important; 
+	}
+	.this-p-hid{
+		font-size: 17px !important;
+	}
+}
 @media only screen and (max-width: 1366px){
+	.this-p{
+		font-size: 20px !important; 
+	}
+	.this-p-hid{
+		font-size: 17px !important;
+	}
 	#logo{
 		width: 120px !important;
 		height: 40px !important;
@@ -1103,8 +1221,8 @@ nav ul a{
 		margin-left: -28px !important;
 	}
 	.make-home{
-		width: 45% !important;
-		left: 55%;
+		width: 60% !important;
+		left: 46.5%;
 	}
 	.part-log-tittle{
 		top: 2%;
@@ -1116,15 +1234,20 @@ nav ul a{
 		margin-top: 0px;
 	}
 }
+@media only screen and (max-width: 1280px){
+	.this-p{
+		font-size: 16px !important; 
+	}
+	.this-p-hid{
+		font-size: 14px !important;
+	}
+}
 @media only screen and (max-device-width: 1080px){
 	.row-text-partn1{
 		margin-top: 0px;
 	}
 	#small{
 		display:block !important;
-	}
-	.carousel-text{
-		top:8% !important;
 	}
 	.text{
 		font-size: 35px !important;
@@ -1162,9 +1285,6 @@ nav ul a{
 	}
 	.div-img{
 		width: 100% !important;
-	}
-	.div-img p{
-		font-size: 50px;
 	}
 	.div-img-large p{
 		font-size: 50px;
@@ -1379,6 +1499,9 @@ nav ul a{
 	#menu-other-2{
 		margin-top: 25px !important;
 	}
+	#menu-residential-small{
+		margin-top: 25px !important;
+	}
 	.text-com-res{
 		padding-left: 20px;
 		padding-right:  20px;
@@ -1430,11 +1553,11 @@ nav ul a{
 	.sub-menu{
 		left: -700px !important;
 		width: 850px !important;
-		top: 80px !important;
-		height: 500px;
+		top: 90px !important;
+		height: 800px;
 	}
 	.flir-ther{
-		top: 15% !important; 
+		top: 8% !important; 
 	}
 	.logos{
 		width: 16% !important;
@@ -1465,6 +1588,7 @@ nav ul a{
 		max-width: 200px;
 		display: block;
 		margin:auto !important;
+		margin-bottom:50px !important;
 	}
 
 	.text-menu-end div{
@@ -1523,7 +1647,7 @@ nav ul a{
 	}
 	.box-promo{
 		width: 80%;
-		height: 1000px;
+		height: 1030px;
 		padding: 100px;
 	}
 	.box-title{
@@ -1586,6 +1710,9 @@ nav ul a{
 		width: 220px;
 		height: 80px !important;
 	}
+	.this-p{
+		font-size: 50px !important;
+	}
 	.this-p-hid{
 		font-size: 38px !important;
 	}
@@ -1593,16 +1720,17 @@ nav ul a{
 		top:40%;
 	}
 	.up{
-		top: 0% !important;
+		top: 80% !important;
 	}
 	.temperature > .box-text > .up{
 		top: 10% !important;
 	}
 	.aerial > .box-text > .up{
-		top: 5% !important;
+		top: 35% !important;
 	}
 	.text-logo-flir{
 		font-size: 30px !important;
+		top: 12% !important;
 	}
 	.res-text-inic{
 		text-align: justify;
@@ -1613,42 +1741,62 @@ nav ul a{
 	.box-promo-1-c{
 		height: 800px;
 	}
-	.network > .box-text > .box-text-rel > .show{
-		top: 90% !important;
-	}
-	.interactive > .box-text > .box-text-rel > .up{
-		top: -20% !important;
-	}
-	.interactive > .box-text > .box-text-rel > .show{
-		top: 90% !important;
-	}
-	.counter > .box-text > .box-text-rel > .up{
-		top: -30% !important;
-	}
-	.counter > .box-text > .box-text-rel > .show{
+	.network > .up{
 		top: 80% !important;
 	}
-	.fire > .box-text > .box-text-rel > .up{
-		top: -20% !important;
+	.interactive > .up{
+		top: 85% !important;
 	}
-	.fire > .box-text > .box-text-rel > .show{
-		top: 70% !important;
+	.interactive > .box-text{
+		transform: translate(0, -70%);
+		-webkit-transform: translate(0, -70%);
+		-o-transform: translate(0, -70%); 
 	}
-	.temperature > .box-text > .box-text-rel > .up{
-		top: -40% !important;
+	.counter > .up{
+		top: 75% !important;
 	}
-	.temperature > .box-text > .box-text-rel > .show{
-		top: 90% !important;
+	.fire > .up{
+		top: 80% !important;
+	}
+	.temperature > .up{
+		top: 75% !important;
+	}
+	.temperature > .box-text{
+		transform: translate(0, -70%);
+		-webkit-transform: translate(0, -70%);
+		-o-transform: translate(0, -70%); 
 	}
 	.aerial > .box-text > .box-text-rel > .this-p-hid{
 		width: 100%;
-		margin:auto;
 		text-align: justify !important;
 	}
-	.aerial > .box-text > .box-text-rel > .up{
-		top: 10% !important;
+	.aerial > .box-text > .box-text-rel > .this-p{
+		width: 100%;
+		text-align: center !important;
 	}
-	.aerial > .box-text > .box-text-rel > .show{
-		top: 95% !important;
+	.aerial > .up{
+		top: 85% !important;
+	}
+	.learn{
+		font-size: 30px !important;
+	}
+	.logos-social-a{
+		font-size: 70px !important;
+	}
+	.footer > p{
+		width: 100%;
+		font-size: 30px !important;
+	}
+	.carousel-test > .div-img-large{
+		padding-top:65px; 
+		margin-top:-65px;
+		min-height: 900px !important;
+	}
+	.carousel-text{
+		position: absolute;
+		color:white !important;
+		width: 100%;
+		top: 50%;
+		transform: translate(0,-50%);
 	}
 }

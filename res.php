@@ -5,12 +5,10 @@ Template Name: Baghai Residential
  ?>
 <?php get_header("other"); ?>
 <div class="container" id="home">
-	<div class="carousel-test">
+	<div class="carousel-test res-carousel">
 		<div class="div-img-large gradient">
-			
-			<img  src="<?php echo get_template_directory_uri() . '/images/residential.jpg'; ?>">
 		</div>
-		<div class="row carousel-text center-align" style="top:50%;">
+		<div class="row carousel-text center-align">
 			<div class="car">
 				<div class="col s8 make-home-div" >
 					<h4 class="make-home" style=" background-color: darkblue; position: relative; background-size: 100px;">MAKE YOUR PROPERTY</h4>
@@ -19,9 +17,9 @@ Template Name: Baghai Residential
 					<h1><b>AS SAFE AS POSSIBLE!</b></h1>
 					<p class="text">We understand the importance of keeping your property safe, <br>
 					whether it is your home or place of business</p>
-					<div class="row">
-						<div class="col offset-s6 s2">
-							<div id="divider" class="divider-services center-align"></div>
+					<div class="flex-container">
+						<div class="flex-row">
+							<div id="divider" class="flex-item divider-services center-align"></div>
 						</div>
 					</div>
 				</div>
@@ -57,9 +55,9 @@ Template Name: Baghai Residential
 	<div id="residential-div" class="row residential-text center-align valign-wrapper">
 		<div class="col s12">
 			<h2 class="res-title"><b>RESIDENTIAL</b></h2>
-			<div class="row">
-				<div class="col offset-s6 s2 div-residential">
-					<div id="divider" class="divider-residential center-align"></div>
+			<div class="flex-container">
+				<div class="flex-row">
+					<div id="divider" class="flex-item divider-residential center-align"></div>
 				</div>
 			</div>
 			<p class="text-res res-text-inic">Keeping your home safe is something that must be taken very seriously and we are here to help. We want our customers to get the best value for their dollar while still getting a top notch security system. Thats why we price our packages at a competitive rate yet we take no shortcuts in ensuring that the services that we offer are installed to perfection and feature the latest technology available. Check out the packages that we offer below and select the one that best suits your needs! 
@@ -82,7 +80,7 @@ Template Name: Baghai Residential
 				<div class="box-promo box-promo-2">
 					<div class="box-title promo-2">
 						<h5>GSM Cellular Plan</h5>
-						<p>including open/close reporting</p>
+						<p>Including open/close reporting</p>
 						<div class="row div-2">
 							<div class="div-residential-2">
 								<div id="divider" class="divider-residential-2 center-align"></div>
@@ -95,7 +93,7 @@ Template Name: Baghai Residential
 				</div>
 				<div class="box-promo">
 					<div class="box-title">
-						<h5>GSM Cellular Plan</h5>
+						<h5>Advance GSM Cellular Plan</h5>
 						<p>Including open/close reporting and Interactive Remote Apps, and technical support including on site labor</p>
 						<div class="row">
 							<div class=" div-residential-2">
@@ -119,9 +117,9 @@ Template Name: Baghai Residential
 		<div class="col s12">
 			<h2>CONTACT US</h2>
 			<form id="form" class="form" method="post" action="">
-				<div class="row">
-					<div class="col offset-s6 s2 div-con">
-						<div id="divider" class="divider-contact center-align"></div>
+				<div class="flex-container">
+					<div class="flex-row">
+						<div id="divider" class="flex-item divider-contact center-align"></div>
 					</div>
 				</div>
 				<div class="box">
@@ -184,28 +182,21 @@ Template Name: Baghai Residential
 					<div class="row">
 						<div class="col s6">
 							<div class="row text-end">
-								<div class="col s12 home-a homeend-a">
-									Home
-								</div>
-								<div class="col s12 com-a comend-a">
-									Commercial
-								</div>
-								<div class="col s12 res-a resend-a">
-									Residential
-								</div>
-							</div>
-						</div>
-						<div class="col s6">
-							<div class="row text-end">
-								<div class="col s12 about-a aboutend-a">
-									About
-								</div>
-								<div class="col s12 support-a supportend-a">
-									Support
-								</div>
-								<div class="col s12 contact-a contactend-a">
-									Contact us
-								</div>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>">
+									<div class="col s12">
+										Home
+									</div>
+								</a>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>/residential">
+									<div class="col s12">
+										Residential
+									</div>
+								</a>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>/commercial">
+									<div class="col s12">
+										Commercial
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -281,36 +272,29 @@ Template Name: Baghai Residential
 		<div class="col s4 left-align end-rows">
 			<div class="row">
 				<div class="col s12" >
-					<h5 class="contact-us" style="margin-top: 0 !important;"><b>MENU</b></h5>
+					<h5 class="contact-us" style="margin-top: 0 !important; margin-left: 40px !important"><b>MENU</b></h5>
 				</div>
 			</div>
 			<div class="row left-align-align">
 				<div class="col s12">
 					<div class="row">
-						<div class="col s6">
+						<div class="col s12">
 							<div class="row text-end text-menu-end">
-								<div class="col s12 home-a homeend-a">
-									Home
-								</div>
-								<div class="col s12 com-a comend-a">
-									Commercial
-								</div>
-								<div class="col s12 res-a resend-a">
-									Residential
-								</div>
-							</div>
-						</div>
-						<div class="col s6">
-							<div class="row text-end text-menu-end">
-								<div class="col s12 about-a aboutend-a">
-									About
-								</div>
-								<div class="col s12 support-a supportend-a">
-									Support
-								</div>
-								<div class="col s12 contact-a contactend-a">
-									Contact us
-								</div>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>">
+									<div class="col s12 home-a homeend-a">
+										Home
+									</div>
+								</a>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>/residential">
+									<div class="col s12 res-a resend-a">
+										Residential
+									</div>
+								</a>
+								<a class="link-cont" href="<?php bloginfo('url'); ?>/commercial">
+									<div class="col s12 com-a comend-a">
+										Commercial
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
